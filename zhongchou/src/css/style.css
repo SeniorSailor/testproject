@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 70px;
+    background: #ffffff;
+}
+header .navbar{
+    min-height: 70px;
+}
+header .navbar-header{
+    height:70px;
+}
+header .navbar-default{
+    background-color: #ffffff;
+}
+header .navbar-default .navbar-nav{color: #828282;}
+header .container-fluid{
+    height:70px;
+}
+header .navbar-brand{
+    padding:0;
+}
+header .navbar-nav{
+    height:70px;
+}
+header .navbar-nav li{
+    width: 90px;
+    height:70px;
+}
+header .navbar-nav li a{
+    height:70px;
+    line-height: 40px;
+}
+header .nav>li>a{
+    padding: 15px 5px 0 25px;
+}
+header .line{
+    display: inline-block;
+    background-color: #d9d9de;
+width: 1px;
+height: 70px;
+    float: left;
+margin-right: 36px;}
+/*搜索框*/
+header .glyphicon-search{position: absolute;top: 30px;color: #828587;padding-left: 5px;}
+header .navbar-form{
+    padding-top: 10px;
+    border-color: #ffffff;
+}
+header .form-group{
+    border: none;
+}
+header .navbar-form input{
+    border: none;
+    background-color: #ffffff;
+}
+/*输入框提示字体样式*/
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #cecece;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #cecece;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #cecece;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #cecece;
+}
+header .form-control{padding: 6px 20px;color: #cecece;}
+/*登录、注册*/
+/*header .navbar-default .navbar-right > li > a{*/
+    /*color: #ff4200;*/
+/*}*/
+header .navbar-default .navbar-right > li > a{
+    color: #777;
+}
+header .navbar-default .navbar-right > li > a:hover{
+    color: #ff4200;
+}
+    /*主体部分*/
+/*.main{height: 700px;}*/
+.hot-nav{
+    list-style: none;padding-left: 20px;
+}
+.col-md-2{
+    border-left: 1px solid #dadada;
+
+}
+.hot-nav li{
+    width: 100px;
+    height:30px;
+}
+/*home*/
+.main-1{
+    margin-top: 120px;border-bottom: 1px solid #d9d9de;
+}
+a{color: #150b09;text-decoration: none;}
+h2{
+    padding-left: 60px;font-family: 微软雅黑;font-size: 18px;font-weight: bold;margin-bottom: 50px;
+
+}
+.media-body{
+    padding-left: 30px;
+}
+.media-body h3{
+    font-family: 微软雅黑;font-size: 18px;color: #150b09;font-weight: 900;
+}
+.media-body h4 {
+    font-family: 微软雅黑;font-size: 12px;color: #828587;margin-top: 10px;
+}
+
+.container{
+    margin-top: 30px;margin-bottom: 115px;
+}
+.media-body p.media-heading{
+    font-family: 微软雅黑;font-size: 12px;color: #828587;margin-top: 25px;margin-bottom: 48px;
+}
+
+
+.media-body b{font-family: 微软雅黑;font-size: 12px;color: #828587;margin-top: 48px;}
+
+.media-body .progress{
+    margin-top: 13px;
+    margin-bottom: 15px;
+    height: 8px;
+}
+span.glyphicon:nth-of-type(2){
+    padding-left: 30px;
+}
+.media-body tr th{
+    padding-left: 20px;text-align: center;color: #828587;font-weight: normal;
+}
+.media-body tr td{
+    padding-left: 20px;text-align: center;color: #150b09;font-weight: 800;
+}
+/*查看更多*/
+.col-md-10 .col-md-offset-10 a{color: #150b09;text-decoration: none;}
+/*右侧的导航栏*/
+ul li a{
+    color: #150b09;text-decoration: none;
+}
+.active{color: #ff4202;/*border-left: 2px solid #ff4202;padding-left: 20px;*/}
+/*卫视主推*/
+.main-2{border-bottom: 1px solid #d9d9de;margin-bottom: 72px;}
+.caption h3{
+    font-size: 18px;font-family: 微软雅黑;color: #150b09;font-weight: 800;margin-top: 15px;
+}
+.caption h4{font-size: 10px;font-family: 微软雅黑;color: #828587;margin-top: 10px;margin-top: 20px;}
+.caption p{color: #828587;font-size: 10px;font-family: "微软雅黑";height: 33px;
+overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+-webkit-line-clamp:2;
+-webkit-box-orient: vertical;}
+.caption .glyphicon{padding-top: 32px;}
+.caption b{color: #828587;}
+.caption .progress{margin-top: 9px;height: 9px;}
+.caption table{margin-top: 13px;}
+.caption td{font-weight: bolder;color: #150b09;padding-left: 20px;text-align: center}
+.caption th{color: #828587;padding-left: 20px;}
+/*合作单位*/
+.main-3 h2{color: #150b09;font-weight: bold;}
+.hezuo{border-left: none;margin-right: 38px;}
+footer{
+    height: 80px;
+    background: #150b09;
+}
+footer ul{
+    width: 960px;
+    /*height: 23px;*/
+    line-height: 23px;
+    list-style: none;
+    padding: 29px 0 0 65px;
+
+}
+footer ul li{float: left;
+
+    text-align: center;
+    /*border-right:1px solid #606061;*/
+}
+footer ul li:last-child a{border-right: none;}
+footer ul li a{
+    width: auto;
+    height: 12px;
+    color: #828587;
+    padding:0 5px 0 5px;
+    border-right:1px solid #606061;
+}
+footer .logo-year{float: right;margin-right: 87px;}
+footer .logo-year img{width: 97px;height: 25px;}
+footer .logo-year em{color: #6c6d6f;font-style: normal;}

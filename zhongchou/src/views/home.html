@@ -1,0 +1,144 @@
+<div>
+    <!--轮播-->
+   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+       <!--Indicators-->
+       <ol class="carousel-indicators">
+           <li data-target="#carousel-example-generic"
+               data-slide-to="{{$index}}" ng-repeat="slide in homeData.slideData"
+               ng-class="{'active':$index==0}"></li>
+       </ol>
+       <!--Wrapper for slides-->
+       <div class="carousel-inner" role="listbox">
+           <div class="item" ng-class="{'active':$index==0}" ng-repeat="slide in homeData.slideData">
+               <img ng-src="{{slide.img}}" style="width: 100%;">
+           </div>
+
+       </div>
+
+       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+       </a>
+       <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+       </a>
+   </div>
+<!--热门项目-->
+    <div class="main-1">
+        <h2>热门项目</h2><div class="col-md-offset-9"><a href="#" class="more">查看更多</a></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#"><img ng-src="{{homeData.hotData[0].img}}" style="width:318px;height: 242px;" class="left"></a>
+                            </div>
+                            <div class="media-body">
+                                <!--title-->
+                                <h3 class="media-heading">{{homeData.hotData[0].name}}</h3>
+                                <!--公司-->
+                                <h4 class="media-heading">by{{homeData.hotData[0].fname}}</h4>
+                                <!--电影介绍-->
+                                <p class="media-heading">{{homeData.hotData[0].desc}}</p>
+                                <!--所属类别-->
+                                <span class="glyphicon glyphicon-tag" aria-hidden="true" style="color: #828587"><b>{{nav_r[1].a}}</b></span>
+                                <span class="glyphicon glyphicon-hd-video" aria-hidden="true"><b>卫视推荐</b></span>
+                                <!--进度条-->
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                         aria-valuemax="100" style="width:{{homeData.hotData[0].sp}}%;background-color: #ff4200;">
+                                    </div>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td>{{homeData.hotData[0].sp}}%</td>
+                                        <td>{{homeData.hotData[0].rprice}}</td>
+                                        <td>{{homeData.hotData[0].rnum}}</td>
+                                        <td>{{homeData.hotData[0].rday}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>进度</th>
+                                        <th>支持金额</th>
+                                        <th>支持者</th>
+                                        <th>剩余天数</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <ul class="hot-nav">
+                            <li ng-repeat="emp in nav_r">
+                                <a href="#">{{emp.a}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/jquery-1.11.1.js"></script>
+    <!--热门主推部分  点击切换导航样式-->
+<script>
+    $("header .navbar-nav li").click(function () {
+        $(this).siblings().removeClass("active");
+        $(this).addClass("active");
+    })
+</script>
+<!--卫视主推-->
+    <div class="main-2">
+        <div class="title container">
+            <div class="row">
+                <h2 class="left" style="display: inline-block">卫视主推</h2>
+                <div class="btn-group col-md-offset-9" role="group" aria-label="..." style="display: inline-block">
+                    <button type="button" class="btn btn-default">查看全部</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4" ng-repeat="i in homeData.newData">
+                    <div class="thumbnail">
+                        <img src="{{i.img}}" style="width: 100%;height: 234px">
+                        <div class="caption">
+                            <h3>{{i.name}}</h3>
+                            <h4>by{{i.fname}}</h4>
+                            <p>{{i.desc}}</p>
+                            <span class="glyphicon glyphicon-tag" style="color: #828587"><b>{{nav_r[1].a}}</b></span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                     aria-valuemax="100" style="width:{{i.sp}}%;background-color: #ff4200;">
+                                </div>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>{{i.sp}}%</td>
+                                    <td>{{i.rprice}}</td>
+                                    <td>{{i.rday}}</td>
+                                </tr>
+                                <tr>
+                                    <th>进度</th>
+                                    <th>支持金额</th>
+                                    <th>剩余天数</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--合作单位-->
+    <div class="main-3">
+        <h2>合作单位</h2>
+        <div class="container" style="margin-top: 50px;border: none">
+            <div class="row">
+                <div class="col-md-2 hezuo" ng-repeat="team in homeData.unitData"><img ng-src="{{team.img}}"></div>
+            </div>
+        </div>
+    </div>
+</div>

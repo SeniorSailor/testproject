@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--导航部分-->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="全民创造"
+                style="width: 170px;height: 70px;"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">节目专栏</a></li>
+                    <li><a href="#">圈子</a></li>
+                </ul>
+                <span class="line"></span>
+                <form class="navbar-form navbar-left">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="输入您想要搜索的内容"
+                               onfocus="this.placeholder=''" onblur="this.placeholder='输入您想要搜索的内容'">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="login">登录</a></li>
+                    <li class="register"><a ui-sref="register">注册</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!--主体部分-->
+<div ui-view></div>
+<!--页脚部分-->
+<footer>
+    <ul>
+        <li><a href="#">关于全民创造</a></li>
+        <li><a href="#">全民创造用户协议</a></li>
+        <li><a href="#">全民创造风险提示</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+    <div class="logo-year">
+        <img src="images/logo2.png"alt="全民创造">
+        <em>©2015</em>
+    </div>
+</footer>
+
+<!--引入js文件-->
+<script src="lib/angular.js"></script>
+<script src="lib/jquery-1.11.1.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="lib/angular-ui-router.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller/controllers.js"></script>
+<script src="js/controller/reg_controller.js"></script>
+<script src="js/controller/log_controller.js"></script>
+<script>
+//    点击按钮实现页面的局部更新
+    /*$("header .register").click(function{
+        $()
+    })*/
+</script>
+
+</body>
+</html>

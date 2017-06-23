@@ -1,0 +1,50 @@
+<div class="reg">
+    <h2>注册</h2>
+    <form action="#" novalidate ng-app="myApp" name="myForm">
+        <!--用户名-->
+        <input type="text" name="user" ng-model="user" placeholder="请输入用户名" required
+               onfocus="this.placeholder=''" onblur="this.placeholder='请输入用户名'"><br>
+        <span ng-show="myForm.user.$dirty && myForm.user.$invalid">*用户名不能为空</span><br>
+       <!--手机号-->
+        <input type="text" name="phone" ng-model="phone" required
+               ng-pattern="/^1[34578][0-9]{9}$/" placeholder="请输入手机号"
+               onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机号'"><br>
+        <span ng-show="myForm.phone.$dirty && myForm.phone.$invalid">
+            <span ng-show="myForm.phone.$error.required">*手机号不能为空</span>
+            <span ng-show="myForm.phone.$error.pattern">*手机号格式不正确</span>
+        </span><br>
+        <!--第一次输入密码-->
+        <input type="password" name="pwd1" ng-model="pwd1" required ng-minlength="6"
+               placeholder="请输入密码，不小于6位"
+               onfocus="this.placeholder=''" onblur="this.placeholder='请输入密码，不小于6位'"><br>
+        <span ng-show="myForm.pwd1.$dirty && myForm.pwd1.$invalid">
+            <span ng-show="myForm.pwd1.$error.required">*密码不能为空</span>
+            <span ng-show="myForm.pwd1.$error.minlength">*密码长度至少为6位</span>
+        </span>
+        <br>
+
+        <!--第二次输入密码-->
+        <input type="password" name="pwd2" ng-model="pwd2" placeholder="请再次输入密码"
+               onfocus="this.placeholder=''" onblur="this.placeholder='请再次输入密码'"><br>
+        <span ng-show="myForm.pwd2.$dirty && pwd1!=pwd2">*两次密码输入不一致</span>
+    </form>
+    <!--复选框-->
+    <div class="xieyi">
+        <input type="checkbox">同意《全民创造用户协议》
+    </div>
+    <!--注册按钮-->
+    <input type="button" value="注册" ng-click="reg(myForm.$valid && pwd1==pwd2 )"
+            ng-class="{'active':myForm.$valid && pwd1==pwd2}">
+    <!--第三方登录-->
+    <div class="other">
+        <h4>第三方登录</h4>
+        <div class="unit">
+            <a href="#" class="wx"><img src="images/wx.png" alt=""></a>
+            <a href="#" class="qq"><img src="images/qq.png" alt=""></a>
+            <a href="#" class="wb"><img src="images/wb.png" alt=""></a>
+        </div>
+    </div>
+    <div class="registed">
+        <span>已有账户？<a ui-sref="login">登录</a></span>
+    </div>
+</div>

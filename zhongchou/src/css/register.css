@@ -1,0 +1,111 @@
+*{margin: 0;padding: 0;}
+/*注册div*/
+.reg{
+    width: 396px;
+    height: 640px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbe0;
+    margin: 0 auto;
+    margin-top: 57px;
+margin-bottom: 74px;}
+.reg h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 21px 0 20px -35px;
+    text-align: left;
+}
+.reg form{
+    text-align: center;
+}
+.reg form span{
+    color: #ff0000;
+}
+/*输入框*/
+.reg form input{
+    width: 345px;
+    height: 37px;
+    margin: 8px 0 8px 0;
+    padding-left: 10px;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #cecece;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #cecece;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #cecece;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #cecece;
+}
+/*注册按钮*/
+input[value=注册]{
+    width: 346px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    background: #cccccc;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    margin:27px 0 0 25px;
+
+}
+.reg input[value=注册].active{
+    background: #2bde73;
+    cursor: pointer;
+}
+/*同意协议*/
+.reg .xieyi{
+    margin: 27px 0 0 25px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+.xieyi input{
+    margin-right: 10px;
+}
+/*第三方登录*/
+.other{
+    text-align: center;
+    margin-top: 25px;
+}
+.other h4{
+    width: auto;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+.other h4:before{
+    float: left;
+    display: block;
+    content: "";
+    background-color: #d9d9de;
+    width: 139px;
+    height: 1px;
+    margin: 7px 0 0 18px;
+}
+.other h4:after{
+    float: right;
+    display: block;
+    content: "";
+    background-color: #d9d9de;
+    width: 139px;
+    height: 1px;
+    margin: 7px 18px 0 0;
+}
+.other .unit{margin-top: 18px;margin-bottom: 18px;}
+.reg .registed{
+    background-color: #f7f7f8;
+    border-top: 1px solid #dbdbe0;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #838383;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+}
+.reg .registed a{
+    text-decoration: none;
+    color: #00a0ff;
+}
+

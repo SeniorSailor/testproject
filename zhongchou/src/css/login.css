@@ -1,0 +1,129 @@
+*{margin: 0;padding: 0;}
+.log{
+    height:535px;
+    width: 397px;
+    border: 1px solid #dbdbe0;
+    background-color: #ffffff;
+
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 72px;
+    text-align: left;
+}
+.log h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 21px 0 20px -35px;
+    text-align: left;
+}
+/*表单*/
+.log form{
+    text-align: center;
+}
+/*输入框*/
+.log form input{
+    width: 345px;
+    height: 37px;
+    margin: 8px 0 8px 0;
+    padding-left: 10px;
+}
+/*提示字体样式*/
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #cecece;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #cecece;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #cecece;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #cecece;
+}
+/*警示语*/
+form span{
+    color: #ff0000;
+}
+/*忘记密码*/
+.log span.forget{
+    float: right;
+    padding-right: 25px;
+}
+.log span.forget a{
+    text-decoration: none;
+}
+.log span.forget a:hover{
+    color: #ff0000;
+}
+/*登录按钮*/
+.log input[value=登录]{
+    width: 346px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    background: #cccccc;
+    color: #fff;
+    font-size: 14px;
+
+    border: none;
+    margin:27px 0 0 25px;
+
+}
+.log input[value=登录].active{
+    background: #2bde73;
+    cursor: pointer;
+}
+/*记住我*/
+.log .remember{
+    margin: 27px 0 0 25px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+.remember input{
+    margin-right: 10px;
+}
+.other{
+    text-align: center;
+    margin-top: 25px;
+}
+.other h4{
+    width: auto;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+.other h4:before{
+    float: left;
+    display: block;
+    content: "";
+    background-color: #d9d9de;
+    width: 139px;
+    height: 1px;
+    margin: 7px 0 0 18px;
+}
+.other h4:after{
+    float: right;
+    display: block;
+    content: "";
+    background-color: #d9d9de;
+    width: 139px;
+    height: 1px;
+    margin: 7px 18px 0 0;
+}
+.other .unit{margin-top: 18px;margin-bottom: 18px;}
+.log .new_user{
+    background-color: #f7f7f8;
+    border-top: 1px solid #dbdbe0;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #838383;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+}
+.log .new_user a{
+    text-decoration: none;
+    color: #00a0ff;
+}
+.log .new_user a:hover{
+    color: #ff0000;
+}
