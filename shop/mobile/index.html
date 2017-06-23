@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta property="qc:admins" content="1757105660130756375">
+<meta name="shenma-site-verification" content="4456f1cd601108fe0646d1d80dc624a2_1447379720">
+<link rel="stylesheet" type="text/css" href="style/Base.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="shortcut icon" href="favicon.ico" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+<title>拉手网 首页</title>
+</head>
+<body>
+<div class="client"> <a href="#" class="close"><i class="iconfont">&#xe654;</i></a> <span class="cli-logo"><img src="img/logo_new.png"></span> <span class="cli-txt">
+  <p>拉手团购APP</p>
+  <p>立享超值优惠</p>
+  </span> <span class="cli-btn"> <a href="#" class="client-btn">立即使用</a> </span> </div>
+<script type="text/javascript" src="jquery/jquery-1.11.1.js"></script> 
+<script type="text/javascript">
+		$(function(){
+			$(".client .close").click(function(){
+				$(".client").hide();
+			});
+		});
+	</script>
+<div class="m_layout"> 
+  <!-- 首页顶部 -->
+  <header>
+    <div class="title">
+      <section class="city">
+        <a href="#" class="dq">北京</a><i class="iconfont" style="font-size: 0.48rem; cursor: pointer;">&#xe601;</i>
+        <div class="city_more">
+          <div class="city-list">
+              <h4>直辖市</h4>
+              <ul>
+                <li>
+                  <a href="#" class="show">北京</a>
+                  <a href="#">天津</a>
+                  <a href="#">上海</a>
+                  <a href="#">重庆</a>
+                </li>
+              </ul>
+            </div>
+            <div class="city-list">
+              <h4>华北地区</h4>
+              <ul>
+                <li>
+                  <a href="#">河北</a>
+                  <a href="#">山东</a>
+                  <a href="#">河南</a>
+                  <a href="#">山西</a>
+                </li>
+              </ul>
+            </div>
+            <div class="city-list">
+              <h4>华南地区</h4>
+              <ul>
+                <li>
+                  <a href="#">广东</a>
+                  <a href="#">福建</a>
+                  <a href="#">广西</a>
+                  <a href="#">海南</a>
+                </li>
+              </ul>
+            </div>
+            <div class="city-list">
+              <h4>华东地区</h4>
+              <ul>
+                <li>
+                  <a href="#">江苏</a>
+                  <a href="#">浙江</a>
+                  <a href="#">安徽</a>
+                  <a href="#">江西</a>
+                </li>
+              </ul>
+            </div>
+            <div class="city-list">
+              <h4>东北地区</h4>
+              <ul>
+                <li>
+                  <a href="#">辽宁</a>
+                  <a href="#">吉林</a>
+                  <a href="#">黑龙江</a>
+                </li>
+              </ul>
+            </div>
+            <div class="city-list">
+              <h4>西北地区</h4>
+              <ul>
+                <li>
+                  <a href="#">陕西</a>
+                  <a href="#">甘肃</a>
+                  <a href="#">宁夏</a>
+                  <a href="#">青海</a>
+                  <a href="#">新疆</a>
+                </li>
+              </ul>
+            </div>
+            <div class="city-list">
+              <h4>西南地区</h4>
+              <ul>
+                <li>
+                  <a href="#">四川</a>
+                  <a href="#">西藏</a>
+                  <a href="#">贵州</a>
+                  <a href="#">云南</a>
+                </li>
+              </ul>
+            </div>
+            <div class="city-list">
+              <h4>华中地区</h4>
+              <ul>
+                <li>
+                  <a href="#">湖北</a>
+                  <a href="#">湖南</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </section>
+      <script type="text/javascript">
+
+          $(".city-list ul li a").click(function(){
+            $(".dq").text($(this).text());
+            $(".city_more").css("display","none");
+            $(this).parent().parent().parent().find("a").removeClass("show");
+            $(this).addClass("show");
+            $(this).parent().parent().parent().siblings().find("a").removeClass("show");
+            });
+            $(".city").hover(function(){
+              $(".city_more").show();
+            },function(){
+              $(".city_more").hide();
+            });
+      </script>
+      <section class="search"> <i class="iconfont" style="font-size: 0.48rem;">&#xe6f3;</i> <span class="sl">请输入商品名、品类或商圈...</span> </section>
+      <section class="nav"> <a href="login.html" class="user" style="color: #ffffff;">登录</a> </section>
+    </div>
+  </header>
+  <!-- 首页顶部 end --> 
+  <!-- 首页主体 -->
+  <div class="m_layout-a"> 
+    <!-- banner -->
+    <div class="banner">
+      <div class="slideBox" id="slideBox">
+        <div class="bd">
+          <ul>
+            <li><a href="#"><img src="img/banner-new.jpg"></a></li>
+            <li><a href="#"><img src="img/share.jpg"></a></li>
+            <li><a href="#"><img src="img/banner3.jpg"></a></li>
+            <!-- <li><a href="#"><img src="img/banner4.jpg"></a></li> -->
+          </ul>
+        </div>
+        <div class="hd">
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <script type="text/javascript">
+								TouchSlide({ 
+									slideCell:"#slideBox",
+									titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+									mainCell:".bd ul", 
+									effect:"leftLoop", 
+									autoPage:true,//自动分页
+									autoPlay:true //自动播放
+								});
+							</script> 
+    </div>
+    <!-- banner  end --> 
+    
+    <!-- 导航栏 -->
+    <nav class="m_nav">
+      <ul>
+        <li> <a href="#"><img src="images/99.png"></a>
+          <p><a href="#">美食</a></p>
+        </li>
+        <li> <a href="#"><img src="images/29.png"></a>
+          <p><a href="#">电影</a></p>
+        </li>
+        <!-- <li> <a href="#"><img src="images/300.png"></a>
+					        <p><a href="#">酒店</a></p>
+					      </li> -->
+        <li> <a href="Touch.html"><img src="images/sc.png"></a>
+          <p><a href="#">拉手商城</a></p>
+        </li>
+        <li> <a href="#"><img src="images/2.png"></a>
+          <p><a href="#">休闲娱乐</a></p>
+        </li>
+        <!-- <li> <a href="#"><img src="images/189.png"></a>
+					        <p><a href="#">自助餐</a></p>
+					      </li>
+					      <li> <a href="#"><img src="images/31.png"></a>
+					        <p><a href="#">KTV</a></p>
+					      </li> -->
+        <li> <a href="#"><img src="images/25.png"></a>
+          <p><a href="#">蛋糕甜品</a></p>
+        </li>
+        <li><a href="#"><img src="images/400.png"></a>
+          <p><a href="#">旅游</a></p>
+        </li>
+        <li><a href="#"><img src="images/37.png"></a>
+          <p><a href="#">摄影写真</a></p>
+        </li>
+        <li> <a href="#"><img src="images/442.png"></a>
+          <p><a href="#">丽人</a></p>
+        </li>
+        <li> <a href="#"><img src="images/46.png"></a>
+          <p><a href="#">生活服务</a></p>
+        </li>
+        <!--<li> <a href="#"><img src="images/404.png"></a>
+					        <p><a href="#">门票</a></p>
+					      </li>
+					      <li> <a href="#"><img src="images/8888.png"></a>
+					        <p><a href="#">代金券</a></p>
+					      </li>
+					      <li> <a href="#"><img src="images/999.png"></a>
+					        <p><a href="#">今日新单</a></p>
+					      </li> -->
+        <li> <a href="#"><img src="images/0.png"></a>
+          <p><a href="#">全部分类</a></p>
+        </li>
+      </ul>
+    </nav>
+    <!-- 导航栏 end --> 
+    
+    <!-- 拉手头条 -->
+    <section class="m_notice">
+      <div class="txt"><img src="img/tips-scroll.png"></div>
+      <div class="m_notice_con">
+        <ul class="line">
+          <li><a href="#"><span>【优惠影票】</span>好片不容错过</a></li>
+          <li><a href="#"><span>【情浓特惠】</span>立减放大招</a></li>
+          <li><a href="#"><span>【春光乍泄】</span>留下美好时光</a></li>
+          <li><a href="#"><span>【拉手微店】</span>智慧电商</a></li>
+        </ul>
+      </div>
+      <script src="js/myslideup.js"></script> 
+      <script type="text/javascript">
+						$(function(){
+							$(".line").slideUp({
+							  "li_h":1.4,
+							  "dan":"rem",
+							  "time":3000,
+							  "movetime":1000
+							});	
+						})</script> 
+      <!-- 拉手头条end --> 
+    </section>
+    <!-- 空Box -->
+    <div class="box"></div>
+    
+    <!-- 图文介绍-->
+    <div class="info">
+      <ul class="box-1">
+        <li> <a href="#"> <img src="img/lijian.png" class="fr">
+          <div>
+            <p class="red"> <font>立减放大招</font> </p>
+            <p> <font>情浓特惠</font> </p>
+          </div>
+          </a> </li>
+        <li> <a href="#"> <img src="img/yingpian.png" class="fr">
+          <div>
+            <p class="blue"> <font>优惠电影票</font> </p>
+            <p> <font>好片不容错过</font> </p>
+          </div>
+          </a> </li>
+      </ul>
+      <ul class="box-1">
+        <li> <a href="#"> <img src="img/chunguang.png" class="fr">
+          <div>
+            <p class="orange"> <font>春光乍泄</font> </p>
+            <p> <font>留下美好时光</font> </p>
+          </div>
+          </a> </li>
+        <li> <a href="#"> <img src="img/weidian.png" class="fr">
+          <div>
+            <p class="green"> <font>拉手微店</font> </p>
+            <p> <font>智慧电商</font> </p>
+          </div>
+          </a> </li>
+      </ul>
+      <ul class="box-2">
+        <li> <a href="#">
+          <div>
+            <p class="purple"> <font>吴桥文化节</font> </p>
+            <p> <font>即将消失的传承</font> </p>
+          </div>
+          <img src="img/wenhuajie.png"></a> </li>
+        <li> <a href="#">
+          <div>
+            <p class="sport"> <font>春暖花开</font> </p>
+            <p> <font>你该运动了</font> </p>
+          </div>
+          <img src="img/yundong.png"></a> </li>
+        <li> <a href="#">
+          <div>
+            <p class="hi"> <font>想嗨就嗨</font> </p>
+            <p> <font>释放激情</font> </p>
+          </div>
+          <img src="img/hai.png"> </a> </li>
+      </ul>
+      <!-- 图文介绍底部轮播 -->
+      <div class="info-slider">
+        <div class="info-slider-box" id="info-slider-box">
+          <div class="info-bd">
+            <ul>
+              <li><a href="#"><img src="img/xingfu.jpg"></a></li>
+              <li><a href="#"><img src="img/zhifu.jpg"></a></li>
+            </ul>
+          </div>
+          <div class="info-hd">
+            <ul>
+            </ul>
+          </div>
+        </div>
+        <script type="text/javascript">
+										TouchSlide({ 
+											slideCell:"#info-slider-box",
+											titCell:".info-hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+											mainCell:".info-bd ul", 
+											effect:"leftLoop", 
+											autoPage:true,//自动分页
+											autoPlay:true //自动播放
+										});
+								</script> 
+      </div>
+      <!--轮播 end--> 
+      <!-- </div> --> 
+    </div>
+  </div>
+  <div class="channel">
+    <ul class="box2">
+      <li class="fl" style="margin-right: 1%"> <a href="#"> <img src="img/linjia.png">
+        <div>
+          <p><font>邻家</font></p>
+          <p><span>壕气送</span></p>
+        </div>
+        </a> </li>
+      <li class="fr"> <a href="#"> <img src="img/shiguangbulao.png">
+        <div>
+          <p><font>时光不老</font></p>
+          <p><span>浪漫不散</span></p>
+        </div>
+        </a> </li>
+    </ul>
+    <ul class="box4">
+      <li>
+        <div>
+          <p><font>美年口腔</font></p>
+          <p><span>健康护理</span></p>
+        </div>
+        <img src="img/meinainkouqiang.png"> </li>
+      <li>
+        <div>
+          <p><font>无限嗨吃</font></p>
+          <p><span>全城最低价</span></p>
+        </div>
+        <img src="img/wuxianhaichi.png"> </li>
+      <li>
+        <div>
+          <p><font>游玩住宿</font></p>
+          <p><span>有拉手别担心</span></p>
+        </div>
+        <img src="img/youwanzhusu.png"> </li>
+      <li>
+        <div>
+          <p><font>您的爱车</font></p>
+          <p><span>靓丽如新</span></p>
+        </div>
+        <img src="img/nindeaiche.png"> </li>
+    </ul>
+  </div>
+  <div class="box3"></div>
+  <div class="channel-pic"> <a href="#"> <img src="img/xingzuo.jpg"> </a> </div>
+</div>
+<!-- 首页主体 end -->
+<div class="goods">
+  <div class="goods-list">
+    <div class="goods-title">
+      <div class="line-l" style="display:inline-block;"></div>
+      <div class="box-l"></div>
+      <p style="display:inline-block;">猜你喜欢</p>
+      <div class="line-r" style="display:inline-block;"></div>
+      <div class="box-r" style="display:inline-block;"></div>
+    </div>
+    <ul>
+      <li> <a href="#"> <img src="img/flag.png" class="flag">
+        <div class="pic"> <img src="img/13.jpg"> </div>
+        <h2 class="title">北京市燕山影剧院</h2>
+        <p class="txt">【房山】单人电影票，可观看2D/3D</p>
+        <div class="main">
+          <p class="price"> <em>¥ 35</em> <del>¥ 100</del> <span class="number">已售906</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> 
+        <!-- <img src="img/flag.png" class="flag"> -->
+        <div class="pic"> <img src="img/12.jpg"> </div>
+        <h2 class="title">哥德堡KTV</h2>
+        <p class="txt">【顺义城区】VIP大包欢唱套系，免费WiFi</p>
+        <div class="main">
+          <p class="price"> <em>¥ 89</em> <del>¥ 700</del> <span class="number">已售13</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> <img src="img/flag.png" class="flag">
+        <div class="pic"> <img src="img/11.jpg"> </div>
+        <h2 class="title">丁丁洋回转自助火锅（广安门店）</h2>
+        <p class="txt">【广外大街】单人火锅自助餐，午晚餐通用</p>
+        <div class="main">
+          <p class="price"> <em>¥ 35</em> <del>¥ 41</del> <span class="number">已售1160</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> <img src="img/flag.png" class="flag">
+        <div class="pic"> <img src="img/10.jpg"> </div>
+        <h2 class="title">沃美影城</h2>
+        <p class="txt">【常营】单人电影票，可观看2D/3D</p>
+        <div class="main">
+          <p class="price"> <em>¥ 30</em> <del>¥ 75</del> <span class="number">已售1937</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> <img src="img/flag.png" class="flag">
+        <div class="pic"> <img src="img/9.jpg"> </div>
+        <h2 class="title">星环影城</h2>
+        <p class="txt">【立水桥】单人电影票，可观看2D/3D/限价片</p>
+        <div class="main">
+          <p class="price"> <em>¥ 38</em> <del>¥ 120</del> <span class="number">已售84</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> 
+        <!-- <img src="img/flag.png" class="flag"> -->
+        <div class="pic"> <img src="img/8.jpg"> </div>
+        <h2 class="title">速8酒店</h2>
+        <p class="txt">【管庄】入住4小时主体大床房，免费WiFi</p>
+        <div class="main">
+          <p class="price"> <em>¥ 88</em> <del>¥ 228</del> <span class="number">已售4</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> <img src="img/flag.png" class="flag">
+        <div class="pic"> <img src="img/7.jpg"> </div>
+        <h2 class="title">佳合时光影城</h2>
+        <p class="txt">【梨园】单人电影票，可观看2D/3D</p>
+        <div class="main">
+          <p class="price"> <em>¥ 30</em> <del>¥ 100</del> <span class="number">已售39</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> 
+        <!-- <img src="img/flag.png" class="flag"> -->
+        <div class="pic"> <img src="img/6.jpg"> </div>
+        <h2 class="title">赛比特金饼屋</h2>
+        <p class="txt">【2店通用】8寸欧式水果蛋糕1个，造型精美</p>
+        <div class="main">
+          <p class="price"> <em>¥ 86</em> <del>¥ 128</del> <span class="number">已售15</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> <img src="img/flag.png" class="flag">
+        <div class="pic"> <img src="img/5.jpg"> </div>
+        <h2 class="title">前门狗不理</h2>
+        <p class="txt">【前门】2-3人餐，免费WiFi</p>
+        <div class="main">
+          <p class="price"> <em>¥ 99</em> <del>¥ 410</del> <span class="number">已售343</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> <img src="img/flag.png" class="flag">
+        <div class="pic"> <img src="img/4.jpg"> </div>
+        <h2 class="title">汉丽轩（公主坟店）</h2>
+        <p class="txt">【公主坟】汉丽轩（公主坟店）：单人自助午餐，环境优美</p>
+        <div class="main">
+          <p class="price"> <em>¥ 45</em> <del>¥ 49</del> <span class="number">已售1768</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> <img src="img/flag.png" class="flag">
+        <div class="pic"> <img src="img/3.jpg"> </div>
+        <h2 class="title">北京市大兴区最影城</h2>
+        <p class="txt">【黄村】单人电影票，可观看2D/3D</p>
+        <div class="main">
+          <p class="price"> <em>¥ 29.5</em> <del>¥ 80</del> <span class="number">已售6</span> </p>
+        </div>
+        </a> </li>
+      <li> <a href="#"> 
+        <!-- <img src="img/flag.png" class="flag"> -->
+        <div class="pic"> <img src="img/2.jpg"> </div>
+        <h2 class="title">中奥凯富单人自助晚餐</h2>
+        <p class="txt">【亚运村】单人自助晚餐，海鲜/中式/西式</p>
+        <div class="main">
+          <p class="price"> <em>¥ 98</em> <del>¥ 128</del> <span class="number">已售33</span> </p>
+        </div>
+        </a> </li>
+    </ul>
+  </div>
+  <div class="more"> <a href="#">
+    <p>查看全部团购</p>
+    </a> </div>
+</div>
+
+<!-- footer -->
+<footer>
+  <div class="title">
+    <div class="city">城市 : <span class="changecity"><a href="#">北京</a></span></div>
+    <p class="footer-user"> <span class="login"><a href="login.html">登录</a></span> <span class="register"><a href="register.html">注册</a></span> </p>
+  </div>
+  <div class="sort">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="login.html">我的拉手</a></li>
+      <li><a href="../index.html">PC版</a></li>
+      <li><a href="index.html">客户端</a></li>
+      <li><a href="../contect.html" class="shouye">用户反馈</a></li>
+    </ul>
+  </div>
+  <div class="service"> <span class="tel">客服 <b><a href="#">&nbsp;&nbsp;&nbsp;4000-517-317</a></b></span> <span class="time">8:00-22:00</span> </div>
+  <a href="#" class="address">地址:北京市朝阳区望京东路一号摩托罗拉大厦8层</a>
+  <div class="copyright">
+    <div class="fl"></div>
+    <span>© 2017拉手网</span>
+    <div class="fr"></div>
+  </div>
+</footer>
+</script>
+</body>
+</html>

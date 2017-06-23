@@ -1,0 +1,116 @@
+/*顶部*/
+.title_box{ width: 100%; height: 104px; background: #fff;}
+.title_box  .w{ height: 104px; margin: 0 auto;  overflow: hidden;}
+.title_box  .w img{margin-top: 25px; margin-left: 20px; float: left;}
+.title_box  .w h3{ display: block; width: 160px; height: 52px; text-align: center; float: left; font-size: 30px; 
+color:#333333; margin-left: 30px; font-weight: normal;  margin-top: 30px; border-left: 1px solid #dbdbdb; 
+box-sizing: border-box; line-height: 50px;;}
+/*中间*/
+.cont_box{ width: 100%; height: 480px; background:#ff5500; overflow: hidden;}
+.cont_box .w{ height: 480px; background: url(../images/login-bg.jpg) no-repeat top center;}
+.cont_box .w .login_box{ width: 342px; height: 392px; background: white; margin-top: 46px; margin-left: 830px; 
+border: 1px solid #dbdbdb; box-sizing: border-box; display: none;}
+/*----------------------用户登录---------------------*/
+.cont_box .w .login_box .tit_box{ width: 295px; height: 45px; margin: 15px auto; margin-bottom: 0px; padding-top: 10px;}
+.cont_box .w .login_box .tit_box h4{ font-size: 18px; font-weight: bold; display: inline-block; float: left; padding-left: 10px;}
+.cont_box .w .login_box .tit_box p{ font-size: 14px; color: #a59999; float: left; padding-left: 55px;}
+.cont_box .w .login_box .tit_box a{ color: #137ce9; transition: border-left-width;}
+.cont_box .w .login_box .tit_box a:hover{ text-decoration: none; }
+
+
+.cont_box .w .login_box .admin_box{ width: 295px; height: 60px;  background: #f9f9f9; margin: 0 auto; }
+.cont_box .w .login_box .admin_box i{ display: block; font-size: 18px; color: #cccccc; float: left; margin-top: 22px; 
+margin-left: 16px; }
+.cont_box .w .login_box .admin_box input{ color: #a9a9a9; float: left; width: 230px; height: 22px; margin-top: 20px; 
+margin-left: 15px; border: none; background: #f9f9f9;  }
+
+.cont_box .w .login_box .pwd_box{ width: 295px; height: 60px; background: #f9f9f9; margin: 0 auto; margin-top: 10px;}
+.cont_box .w .login_box .pwd_box i{display: block; font-size: 18px; color: #cccccc; float: left; margin-top: 22px; 
+margin-left: 16px; }
+.cont_box .w .login_box .pwd_box input{color: #a9a9a9; float: left; width: 230px; height: 22px; margin-top: 20px; 
+margin-left: 15px; border: none; background: #f9f9f9;  }
+
+.cont_box .w .login_box .test_box{ width: 295px; height: 40px; background: #f29dba; margin: 0 auto; margin-top: 10px; overflow: hidden;}
+.cont_box .w .login_box .test_box i{ width: 52px; height: 26px; background: white; border-radius: 2px; display: block;
+ margin: 3px; float: left; font-size: 24px; text-align: center; padding-top: 8px; color: #f29eba;}
+.cont_box .w .login_box .test_box h5{float: left; font-size: 14px; color: white; padding-left:40px; line-height: 36px;}
+
+.cont_box .w .login_box .set_box{ width: 295px; height: 30px; margin: 10px auto; }
+.cont_box .w .login_box .set_box p{ float: left;  margin-right: 15px; line-height: 28px;}
+.cont_box .w .login_box .set_box p input{ float: left; font-size: 14px; margin-top:8px; margin-left: 5px; margin-right: 7px;}
+.cont_box .w .login_box .set_box a{ float: right; margin-right: 10px; color: #9f9f9f; line-height: 28px;}
+.cont_box .w .login_box .set_box a:hover{ text-decoration: none;}
+
+.cont_box .w .login_box .btn { width: 295px; height: 40px; background: #e5004b; font-size: 18px; color: white; 
+text-align: center; border: none; margin: 0 auto; line-height: 36px;}
+
+.cont_box .w .login_box .more_box{ width: 295px; height:25px; margin: 10px auto;}
+.cont_box .w .login_box .more_box p{ float: left;}
+.cont_box .w .login_box .more_box img{ float: left; padding: 3px;}
+
+/****************注册*******************/
+.cont_box .w .register_box{ width: 342px; height: 392px; background: white; margin-top: 46px; margin-left: 830px; 
+border: 1px solid #dbdbdb; box-sizing: border-box;}
+
+.cont_box .w .register_box .tit_box{ width: 295px; height: 45px; margin: 15px auto; margin-bottom: 0px; padding-top: 10px;}
+.cont_box .w .register_box .tit_box h4{ font-size: 18px; font-weight: bold; display: inline-block; float: left; padding-left: 10px;}
+.cont_box .w .register_box .tit_box p{ font-size: 14px; color: #a59999; float: left; padding-left: 55px;}
+.cont_box .w .register_box .tit_box a{ color: #ff5500; transition: border-left-width;}
+.cont_box .w .register_box .tit_box a:hover{ text-decoration: none; }
+
+.cont_box .w .register_box .admin_box{ width: 295px; height: 40px;  background: #f9f9f9; margin: 0 auto; }
+.cont_box .w .register_box .admin_box i{ display: block; font-size: 18px; float: left; margin-top: 12px; 
+margin-left: 16px; }
+.cont_box .w .register_box .admin_box input{ color: #a9a9a9; float: left; width: 230px; height: 22px; margin-top: 10px; 
+margin-left: 15px; border: none; background: #f9f9f9;  }
+
+.cont_box .w .register_box .pwd_box{ width: 295px; height: 40px; background: #f9f9f9; margin: 0 auto; margin-top: 10px;}
+.cont_box .w .register_box .pwd_box i{display: block; font-size: 18px; /*color: #cccccc;*/ float: left; margin-top: 12px; 
+margin-left: 16px; }
+.cont_box .w .register_box .pwd_box input{color: #a9a9a9; float: left; width: 230px; height: 22px; margin-top: 10px; 
+margin-left: 15px; border: none; background: #f9f9f9;  }
+.cont_box .w .register_box .test_box{ width: 295px; height: 40px;  margin: 0 auto; margin-top: 10px; } 
+.cont_box .w .register_box .test_box .test{ width: 175px; height:40px; background: #f9f9f9; float: left;}
+.cont_box .w .register_box .test_box .test .iconfont{ display: inline-block; width: 20px;
+ height: 20px; float: left; margin-top: 10px; margin-left: 16px; margin-right: 15px;}
+ .cont_box .w .register_box .test_box .test h4{ line-height: 36px; font-size: 12px; color: #a9a9a9; }
+ 
+ .cont_box .w .register_box .test_box input{ float: left; font-size: 12px; margin-top:8px; margin-left: 5px; margin-right: 7px; }
+ .cont_box .w .register_box .dt{ width: 103px; height: 40px; float: right; border: 1px solid #E9E9E9; box-sizing: border-box;}
+ 
+.cont_box .w .register_box .xieyi{ width: 295px; height: 20px;  margin: 10px auto; }
+.cont_box .w .register_box .xieyi p{}
+.cont_box .w .register_box .xieyi p input{ float: left; margin-top: 3px; margin-left: 5px; margin-right: 10px;}
+.cont_box .w .register_box .xieyi p a{ color: #ff5500;}
+.cont_box .w .register_box .xieyi p a:hover{ text-decoration: none;}
+
+ .cont_box .w .register_box .mtest_box{ width: 295px; height: 40px;  margin: 10px auto;}
+ .cont_box .w .register_box .mtest_box .mtest{ float: left; width: 175px; height: 40px; background: #f9f9f9;}
+ .cont_box .w .register_box .mtest_box .mtest i{ display: block; width: 20px; height: 20px; 
+ background: url(../images/test.png) no-repeat top center; float: left; margin-top: 10px; margin-left: 18px; margin-right: 15px;}
+  .cont_box .w .register_box .mtest_box .mtest h4{line-height: 36px; font-size: 12px; color: #a9a9a9;}
+ 
+  .cont_box .w .register_box .mtest_box .yzcode{ float: right; width: 104px; height: 40px; background:#ff5500; text-align: center;}
+  .cont_box .w .register_box .mtest_box .yzcode a{ font-size: 12px; color: white;  line-height: 38px;}
+  .cont_box .w .register_box .mtest_box .yzcode a:hover{ text-decoration: none;}
+ .cont_box .w .register_box .testm_box .yzcode{ float: left;}
+ 
+ .cont_box .w .register_box .btnl_box{ width: 295px; height: 40px; background: #ff5500; font-size: 18px; color: white; 
+text-align: center; border: none; margin: 0 auto; line-height: 36px; }
+ .cont_box .w .register_box .btnl_box a{ color: white;}
+ .cont_box .w .register_box .btnl_box a:hover{ text-decoration: none;}
+ 
+ .cont_box .w .onload{width:400px;height:400px;position:absolute;top:120px;left:220px;}
+ .cont_box .w .onload img{width:100%;height:100%;}
+ .cont_box .w .onload p{width:400px;height:40px;padding-top:10px;text-align:center;background:#fff;font-size:24px;color:#606060;}
+/*底部*/
+.foot_box{ widows: 100%; height: 130px; overflow: hidden; background: #f3f3f3; border-bottom: 1px solid #dbdbdb;
+box-sizing: border-box; }
+.foot_box .w{ height: 130px;  text-align: center; overflow: hidden;}
+.foot_box .w p{ font-size: 12px; color: #9c9c9c; margin-top: 20px;}
+.foot_box .w .pic{ height: 48px; width: 290px; margin: 0 auto; margin-top: 20px;}
+.foot_box .w .pic img{ float: left; padding: 5px;}
+
+
+
+

@@ -1,0 +1,91 @@
+/*CSS Document*/
+body{width:100%;max-width:15rem;margin:0 auto;height:50rem;background:#e2e2e2;}
+header{width:100%;max-width:15rem;margin:0 auto;position:relative;height:1.8rem;line-height:1.8rem;
+background:#ff5500;color:#fff;}
+header a .iconfont{color:#fff;font-size:0.8rem;}
+header a.back{position:absolute;left:0.3rem;}
+header a.user{position:absolute;right:1.5rem;}
+header a.home{position:absolute;right:0.4rem;}
+header span{position:absolute;left:40%;font-size:0.66rem;}
+
+
+.banner{width:100%;max-width:15rem;margin:0 auto;position:relative;height:9.2rem;}
+.banner img{width:100%;height:97%;}
+.banner .pic_info{position:absolute;padding-left:0.5rem;bottom:-0.4rem;color:#fff;width:96.7%;height:2rem;
+padding-top: 0.5rem;
+background-image:-webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, .2) 20%,rgba(0, 0, 0, .6) 100%);}
+.banner .pic_info h1{font-size:0.6rem;z-index:10001;}
+.banner .pic_info h3{font-size:0.48rem;padding-top:0.3rem;}
+.banner .pic .edit{position:absolute;right:0.1rem;bottom:0rem;}
+.banner .pic .edit a .iconfont{color:#fff;font-size:1rem;font-weight:normal;}
+.banner .pic .edit .collect{padding-right:0.5rem;color:#fff;}
+.banner .pic .edit .share{padding-right:0.3rem;color:#fff;}
+
+.banner .detail_other{width:100%;height:1.1rem;background:#fff;}
+.banner .detail_other ul{width:100%;height:100%;}
+.banner .detail_other ul li{float:left;width:26%;height:100%;margin-left:0.8rem;color:#989898;}
+.banner .detail_other ul li .iconfont{color:#9bcc07;font-size:0.56rem;}
+.banner .detail_other ul li #sale{color:#989898;}
+
+
+/*商家信息*/
+main{width:100%;max-width:15rem;margin:0 auto;position:relative;height:41.4rem;margin-top:2rem;}
+main .info{width:100%;height:5.3rem;background:#fff;}
+main .info h2{font-size:0.6rem;color:#3c3c3c;border-bottom:1px solid #cfcfcf;height:1.5rem;line-height:1.5rem;
+padding-left:0.5rem;font-family:'微软雅黑'}
+main .info .address .name{color:#3d3d3d;font-size:0.56rem;padding-left: 0.5rem;padding-top: 0.4rem;}
+main .info .address .local{color:#989898;padding-left: 0.5rem;padding-top: 0.4rem;}
+main .info .address .distance{color:#42bae2;padding-left:0.5rem;padding-top: 0.4rem;}
+main .info .address .distance .iconfont{color:#999899;border-right:1px solid #998999;
+padding-right:0.5rem;margin-right:0.3rem;}
+main .info .call{width:2.5rem;height:3rem;position: absolute;right: 0;top:1.9rem;border-left: 1px solid #b5b5b5;}
+main .info .call .iconfont{color: #ff6321;line-height:3rem;padding-left: 0.8rem;font-size: 1rem;}
+
+/*本单详情*/
+main .detail{width:100%;max-width:15rem;margin:0 auto;height:14.2rem;margin-top:0.5rem;background: #fff;}
+main .detail img{width: 100%;height: 90%;}
+main .detail .more{color: #ff621d;font-size: 0.6rem;line-height:1.2rem;padding-left:40%;}
+
+/*温馨提示*/
+.prompt{width:100%;max-width:15rem;margin:0 auto;height:12.8rem;margin-top:0.5rem;}
+.prompt img{width: 100%;height: 100%;}
+
+/*other其他团购*/
+main .other{width:100%;max-width:15rem;margin:0 auto;height:7.1rem;margin-top:0.5rem;background:#fff;
+position:relative;}
+main .other h2{font-size: 0.6rem;color: #3c3c3c;border-bottom:1px solid #cfcfcf;padding-left: 0.5rem;height:1.4rem;
+line-height:1.4rem;font-weight:normal;}
+main .other .all{font-size: 0.48rem;color: #3c3c3c;border-bottom:1px solid #cfcfcf;
+height:1.4rem;line-height:1.4rem;}
+main .other .all .price{display:inline-block;}
+main .other .all .price font{color: #ff601c;display:inline-block;padding-left: 0.5rem;}
+main .other .all .price del{color: #a1a1a1;display:inline-block;padding-left: 0.2rem;}
+main .other .all .txt{color:#464545;display:inline-block;padding-left: 0.2rem;font-size: 0.6rem;}
+main .other .all .iconfont{color: #d7d7d7;font-size:0.6rem; display:inline-block;float:right;padding-right: 0.5rem;}
+
+
+/*footer*/
+footer{height:6..5rem;background:#f4f4f4;margin:0 auto;width: 15rem;/*font-family:arial;*/}
+footer .title{font-size:0.56rem;font-family:'微软雅黑';color:#333333;
+height:1.32rem;width:100%;line-height:1.32rem;}
+footer .title .city{float:left;padding-left:0.4rem;}
+footer .title .city span a{color:#ff621d;}
+footer .title p.footer-user{float:right;margin-right:0.4rem;}
+footer .sort{width:100%;height:1.7rem;border-top:1px solid #e6e6e6;}
+footer .sort ul{float:left;width:100%;height:1.7rem;}
+footer .sort ul li{border-right:1px solid #bababa;float:left;width:16%;text-align:center;margin-left:0.5rem;
+height:0.48rem;line-height:0.48rem;margin-top:0.56rem;color:#494343;font-size:0.48rem;}
+footer .sort ul li:last-child{border:none;}
+footer .service{width:100%;height:0.8rem;background:#f4f4f4;}
+footer .service span.tel{margin-left:2.7rem;float:left;font-size:0.56rem;font-family:arial;}
+footer .service span.tel a{font-size:0.56rem;font-weight:bold;font-size:0.56rem;font-family:arial;}
+footer .service span.time{margin-right:3.4rem;float:right;font-size:0.56rem;font-family:arial;}
+footer a.address{width:5.24rem;height:0.24rem;font-size:0.24rem;font-family:'微软雅黑';
+margin-left:4.5rem;}
+footer .copyright{width:100%;height:1.64rem;position: relative;background:#f4f4f4;}
+footer .copyright .fl{position: absolute;height:1px;width:4.8rem;bottom:1.1rem;
+background:#bababa;}
+footer .copyright .fr{position:absolute;height:1px;width:5.6rem;right:0;bottom:1.1rem;
+background:#bababa;}
+footer .copyright span{width:3.3rem;height:0.6rem;left:5.6rem; position:absolute;
+font-size:0.48rem;font-family:arial;color:#333333;bottom:0.8rem;}

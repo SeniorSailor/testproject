@@ -1,0 +1,33 @@
+/*CSS Document*/
+* { padding: 0px;margin:0px;font-family:"微软雅黑"; } 
+.header{position: relative;width:100%;max-width:15rem;height: 1rem;margin: 0 auto;background:#ff5500;}
+.header #back{position: absolute;left: 0.5rem;color:#fff;font-size:0.6rem;padding-top:0.1rem;}
+.header span{position: absolute;left: 45%;color:#fff;padding-top:0.2rem;}
+.header #home{position: absolute;right: 0.5rem;color:#fff;font-size:0.6rem;padding-top:0.1rem;}
+
+
+
+.car_footer { height: 1rem; width: 100%; position: fixed; left: 0; bottom: 0; }
+.car_footer .cart_price { width: 70%; background-color: #666; color: #fff; font-size: 0.24rem; float: left; }
+.car_footer .cart_price p { font-size: 0.24rem; line-height: 0.5rem; padding-left: 0.2rem; }
+.car_footer .cart_price p.all_price { font-size: 0.32rem; padding-top: 0.1rem; }
+.car_footer .cart_price p.all_price span { color: #f69; }
+.car_footer .cart_js { background-color: #ff5500; width: 30%; float: left; text-align: center; height: 1.1rem;
+line-height: 1.1rem; font-size: 0.36rem; color: #fff; font-weight: bold; cursor: pointer; }
+.car_footer .cart_js span { font-size: 0.24rem; }
+
+.goodsItem{width:30%;height:8rem;float:left;border:1px solid #ccc;margin:0.1rem;} 
+#goods{width:100%;max-width:15rem;margin: 0 auto;padding-left: 0.3rem;} 
+.goditem{list-style:none;} 
+.godpic img{display:block;width:100%;height:5rem;margin:0 auto;} 
+.godprice,.godinfo,.godadd{display:block;width:4.4rem;margin:0 auto;text-align:center;}
+.godinfo{padding-left:0.2rem;} 
+.godprice{font-size:0.4rem;color:#f00;} 
+.godinfo{text-align:center;font-size:0.28rem;margin:0.2rem 0;} 
+.godadd a{display:block;width:3rem;height:0.72rem;background-color:#fd6a01;border-radius:0.8rem;margin:0 auto;
+text-decoration:none;color:#fff;line-height:0.72rem;} 
+#godcar{position:fixed;right:7.5rem;bottom:-0.3rem;width:1.44rem;height:1.28rem;z-index: 100001}
+#godcar img{width:0.5rem;height:0.5rem;margin-top:0.4rem;margin-left:0.4rem;} 
+#godcar .dnum{width:0.48rem;height:0.48rem;border-radius:0.24rem;background-color:#ff5500;text-align:center;
+line-height:0.48rem;position:absolute;font-size:0.24rem;top:0;color:#fff;} 
+.godadd .bg {background-color:#808080;} 

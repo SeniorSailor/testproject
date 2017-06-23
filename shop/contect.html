@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0105)http://www.17sucai.com/preview/53276/2013-10-29/HTML5_CSS3%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>联系我们</title>
+
+<style type="text/css">
+.contact_form{border:1px solid #DDDDDD;padding:10px;width:760px;margin:40px auto 0 auto;}
+header{width: 100%;height: 90px;background: #ff5500;line-height:90px;position:relative;}
+header .iconfont{font-size:30px;color: #fff;}
+/*header i:hover{}*/
+header a.back{position:absolute;left:30px;text-decoration: none;}
+header a.home{position:absolute;right:30px;text-decoration: none;}
+header span{padding-left:45%;font-size:30px;color: #fff;}
+</style>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" media="screen" href="./contect_files/styles.css">
+<link rel="stylesheet" type="text/css" href="style/base.css">
+</head>
+<body>
+<header>
+	<a href="#" class="back"><i class="iconfont">&#xe7b6;</i></a>
+	<span>答疑反馈</span>
+	<a href="index.html" class="home"><i class="iconfont">&#xe604;</i></a>
+</header>
+<form class="contact_form" action="#" method="post" name="contact_form">
+	<ul>
+		<li>
+			<h2>您的信息</h2>
+			<span class="required_notification">* 表示必填项</span>
+		</li>
+		<li>
+			<label for="name">姓名:</label>
+			<input type="text" placeholder="请输入您的姓名" required="" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的姓名'">
+		</li>
+		<li>
+			<label for="email">电子邮件:</label>
+			<input type="email" name="email" placeholder="lashou@example.com" required="" onfocus="this.placeholder=''" onblur="this.placeholder='lashou@example.com'">
+			<span class="form_hint">正确格式为：lashou@example.com</span>
+		</li>
+		<li>
+			<label for="website">手机:</label>
+			<input type="url" name="website" placeholder="+86155****1520" required="" pattern="(http|https)://.+" onfocus="this.placeholder=''" onblur="this.placeholder='+86155****1520'">
+			<span class="form_hint">正确格式为：+86155****1520</span>
+		</li>
+		<li>
+			<label for="message">留言:</label>
+			<textarea name="message" cols="40" rows="6" placeholder="请写下您的意见、建议或疑问，我们会积极采纳和解答" required="" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的密码'"></textarea>
+		</li>
+		<li>
+			<button class="submit" type="submit">提交</button>
+		</li>
+	</ul>
+</form>
+
+
+</body></html>

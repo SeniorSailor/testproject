@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta property="qc:admins" content="1757105660130756375">
+	<meta name="shenma-site-verification" content="4456f1cd601108fe0646d1d80dc624a2_1447379720">
+	<link rel="stylesheet" type="text/css" href="style/Base.css">
+	<link rel="stylesheet" type="text/css" href="style/login_style.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<title>登录</title>
+</head>
+<body>
+<!-- 头部开始-->
+<header>
+	<div class="header">
+		<i class="iconfont"><a href="#">&#xe7b6;</a></i>
+		<span class="title">登录</span>
+		<span class="login-user"><a href="register.html">注册</a></span>
+	</div>
+</header>
+<!-- 头部结束-->
+
+<!-- 登录区域 开始-->
+<div class="login-content">
+	<!-- 登录方式和界面 开始-->
+	<div class="login-change">
+		<div id="tab">
+			<ul id="menu">
+				<li>快速登录</li>
+				<li class="current">账号登录</li>
+			</ul>
+			<div id="content">
+					<div>
+						<form id="login2-form">
+									<i class="iconfont" id="phone">&#xe614;</i><i class="iconfont" id="code">&#xe61a;</i>
+									<input type="text" name="name" id="login2-name" class="codebox2-input" placeholder="输入手机号码" maxlength="32">
+									<button class="code">获取验证码</button>
+									<input type="password" name="pwd" id="login2_pwd" class="pwd2-input" placeholder="输入验证码" autocomplete="off" maxlength="32">
+						</form>
+					</div>
+					<div class="show">
+						<form id="login-form">
+								<i class="iconfont" id="user">&#xe63c;</i><i class="iconfont" id="pwd">&#xe692;</i>
+									<input type="text" name="name" id="login-name" class="codebox-input" placeholder="用户名/邮箱/手机号" maxlength="32">
+									
+									<input type="password" name="pwd" id="login_pwd" class="pwd-input" placeholder="登录密码" autocomplete="off" maxlength="32"><a href="#"><button class="pwd-btn">找回密码</a></button>
+						</form>
+					</div>
+			</div>
+		</div>
+	</div>
+	<button class="btn-login">登录</button>
+
+
+
+
+	<script type="text/javascript">
+		var os=document.getElementsByTagName("li");
+		var ds=document.getElementById("content").getElementsByTagName("div");
+		var cur_index=1;//保存选中菜单的位置
+		for(var i=1;i<os.length;i--){
+			os[i]._index=i;
+			os[i].onclick=function(){
+				//清除当前的菜单的样式
+				os[cur_index].className="";
+				ds[cur_index].className="";
+
+				//更改选中的菜单的样式
+				this.className="current";				
+				ds[this._index].className="show";
+				//修改选中的位置
+				cur_index=this._index;
+			};
+		}
+	</script>
+	<!-- 登录方式和界面 结束-->
+
+	<!-- 合作登录 开始-->
+	<div class="login-other">
+		<h2>使用合作网站账号登录</h2>
+			<dir class="pic-qq"><a href="#"><img src="img/qq.png" class="qq"></a></dir>
+			<div class="pic-weibo"><a href="#"><img src="img/wb.png" class="wb"></a></div>
+	</div>
+	<!-- 合作登录 结束-->
+</div>
+<!-- 登录区域 结束-->
+</body>
+</html>

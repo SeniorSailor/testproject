@@ -1,0 +1,85 @@
+/*CSS Document*/
+
+/*header*/
+header{width:100%;max-width:15rem;height:5.4rem;margin:0 auto;}
+.header #more{color:#fff;position:absolute;right:0.5rem;bottom:0.01rem;font-size:1rem;}
+.header{position:relative;width:100%;height:5.4rem;}
+.header img{width:100%;height:5.4rem;}
+.header input{background:#f8e8e6;position:absolute;bottom:0.2rem;left:0.5rem;width:11rem;height:0.8rem;
+border-radius:0.1rem;padding-left:0.8rem;font-size:0.56rem;padding-top:0.1rem;opacity:0.9;}
+.header #search{color:#bfb1b5;position:absolute;left: 0.6rem; bottom:0.25rem;z-index:1;font-size:0.6rem;}
+
+
+/*nav*/
+nav{width:100%;max-width:15rem;height:3.2rem;margin:0 auto;background:#fff;}
+nav ul{width:100%;height:3.2rem;border-bottom:1px solid #eee;}
+nav ul li{width:25%;height:3.2rem;color:#fff;float:left;}
+nav ul li .fenlei{background:#fb6e52;border-radius:50%;overflow:hidden;width:1.8rem;height:1.8rem;margin-top:0.2rem;margin-left:0.9rem;}
+nav ul li .fenlei img{width:1.4rem;height:1.4rem;margin-left:0.18rem;margin-top: 0.18rem;}
+nav ul li .shangcheng{background:#4fc0e8;border-radius:50%;overflow:hidden;width:1.8rem;height:1.8rem;margin-left:0.9rem;margin-top:0.2rem;}
+nav ul li .shangcheng img{width:1.4rem;height:1.4rem;margin-left:0.18rem;margin-top: 0.18rem;}
+nav ul li .gouwuche{background:#48cfae;border-radius:50%;overflow:hidden;width:1.8rem;height:1.8rem;margin-top:0.2rem;margin-left:0.9rem;}
+nav ul li .gouwuche img{width:1.4rem;height:1.4rem;margin-left:0.18rem;margin-top: 0.18rem;}
+nav ul li .zichan{background:#ac92ed;border-radius:50%;overflow:hidden;width:1.8rem;height:1.8rem;margin-top:0.2rem;margin-left:0.9rem;}
+nav ul li .zichan img{width:1.4rem;height:1.4rem;margin-left:0.24rem;margin-top: 0.18rem;}
+nav ul li p{color:#555555;font-size:0.64rem;white-space:nowrap;z-index:10001;text-align:center;
+/*padding-right:0.7rem;*/padding-top: 0.2rem;}
+
+
+/*main*/
+main{width:100%;max-width:15rem;height:64.8rem;margin:0 auto;}
+main .warp{width:100%;height:6.6rem;}
+main .warp img{width:100%;height:6.6rem;}
+
+/*普通商品*/
+main .goods-list{width:100%;height:31.8rem;margin-top:0.5rem;}
+main .goods-list ul{width:100%;height:32rem;}
+main .goods-list ul li{width:48%;height:8rem;margin-left:0.2rem;float:left;margin-top:0.1rem;border-radius:0.3rem;
+overflow:hidden;}
+main .goods-list ul li .pic{width: 100%;height:60%;}
+main .goods-list ul li img{width:100%;height:100%;}
+main .goods-list ul li dl{width:100%;height:2rem;margin-left:0rem;background:#fff;}
+main .goods-list ul li dt.name{color:#000;font-size:0.64rem;font-family:'微软雅黑';padding-left:0.1rem;height:1.4rem;line-height:0.7rem;
+overflow:hidden;}
+main .goods-list ul li dd.price{color:#db4453;font-size:0.55rem;font-family:'微软雅黑';font-style:normal;height: 0.6rem;line-height: 0.6rem;
+border-top:1px solid #eeeeee;padding-left:0.1rem;}
+main .goods-list ul li dd em{font-style:normal;font-weight:bold;}
+
+
+/*打折商品*/
+main .discount{width:100%;height:20rem;/*margin-top:0.8rem;*/}
+main .discount ul{width:100%;height:20rem;margin-top:2%;}
+main .discount ul li{width:48%;height:49%;margin-left:0.2rem;float:left;margin-top:0.1rem;border-radius:0.3rem;
+overflow:hidden;position: relative;}
+main .discount ul li .pic{width: 100%;height:70%;}
+main .discount ul li img.mark{top:-0.1rem ;right: 0.2rem;width:0.96rem;height:0.96rem;position: absolute;}
+main .discount ul li .pic img.goods-pic{width:100%;height:100%;}
+main .discount ul li dl{width:100%;height:2.4rem;margin-left:0rem;background:#fff;}
+main .discount li dt.name{color:#000;font-size:0.64rem;font-family:'微软雅黑';padding-left:0.1rem;height:1.6rem;line-height:0.8rem;overflow:hidden;}
+main .discount ul li dd.price{color:#db4453;font-size:0.55rem;font-family:'微软雅黑';border-top:1px solid #eeeeee;
+padding-left:0.1rem;height: 0.8rem;line-height: 0.8rem;}
+main .discountt ul li dd del{font-style:normal;font-weight:bold;color:#777777;}
+
+
+
+
+/*抢购商品*/
+main .panic-buying{width:100%;height:8rem;margin-top:0.8rem;}
+main .panic-buying ul{width:100%;height:12rem;margin-top:2%;}
+main .panic-buying ul li{width:48%;height:8rem;margin-left:0.2rem;float:left;margin-top:0.1rem;
+border-radius:0.3rem;overflow:hidden;position:relative;}
+main .panic-buying ul li img.mark{top:-0.1rem ;right: 0.2rem;width:0.64rem;height:0.64rem;position: absolute;}
+main .panic-buying ul li .pic{width: 100%;height:80%;}
+main .panic-buying ul li img{width:100%;height:100%;}
+main .panic-buying ul li dl{width:100%;height:1.5rem;margin-left:0rem;background:#fff;}
+main .panic-buying ul li dt.name{color: #000;font-size:0.64rem;font-family:'微软雅黑';padding-left:0.1rem;}
+main .panic-buying ul li dd.price{color:#db4453;font-size:0.55rem;font-family:'微软雅黑';font-style:normal;
+border-top:1px solid #eeeeee;margin-top:0.4rem;padding-left:0.1rem;}
+
+
+
+/*footer*/
+footer{height:1.2rem;width:100%;max-width:15rem;margin:0 auto;background:#fff;margin-top:1.2rem;}
+footer .text{ width:100%;height:0.6rem;color:#555555;font-size:0.64rem;line-height:1.2rem;text-align:center;}
+footer .text a.get-help{width:50%;height:50%;}
+footer .text a.go-top{width:50%;height:500%;padding-left:40%;}

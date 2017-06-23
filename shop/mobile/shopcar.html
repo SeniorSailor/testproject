@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta property="qc:admins" content="1757105660130756375">
+	<meta name="shenma-site-verification" content="4456f1cd601108fe0646d1d80dc624a2_1447379720">
+	<link rel="stylesheet" type="text/css" href="style/Base.css">
+	<link rel="stylesheet" type="text/css" href="style/shop_car.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/TouchSlide.1.1.js"></script>
+	<title>购物车</title>
+</head>
+<body>
+<div class="header">
+<a href="Tonch.html"><i class="iconfont" id="back">&#xe7b6;</i></a>
+<span>商品</span>
+<a href="index.html"><i class="iconfont" id="home">&#xe604;</i></a>
+</div>
+	<div id="goods">
+		<div class="goodsItem">
+			<ul class="goditem">
+				<li class="godpic"><img src="images/goods1.jpg"></li>
+				<li class="godprice">￥199.00</li>
+				<li class="godinfo">海参君礼盒</li>
+				<li class="godadd"><a href="javascript:;">加入购物车</a></li>
+			</ul>
+		</div>
+		<div class="goodsItem">
+			<ul class="goditem">
+				<li class="godpic"><img src="images/goods2.jpg"></li>
+				<li class="godprice">￥39.00</li>
+				<li class="godinfo">蓝莓果味酒 双支</li>
+				<li class="godadd"><a href="javascript:;">加入购物车</a></li>
+			</ul>
+		</div>
+		<div class="goodsItem">
+			<ul class="goditem">
+				<li class="godpic"><img src="images/goods3.jpg"></li>  
+				<li class="godprice">￥42.00</li>
+				<li class="godinfo">山西平遥牛肉</li>  
+				<li class="godadd"><a href="javascript:;">加入购物车</a></li>   
+			</ul>
+		</div>
+		<div class="goodsItem"> 
+			<ul class="goditem">    
+				<li class="godpic"><img src="images/goods4.jpg"></li>    
+				<li class="godprice">￥19.80</li>
+				<li class="godinfo">巧罗曲奇饼干</li>   
+				<li class="godadd"><a href="javascript:;">加入购物车</a></li>  
+			</ul>   
+		</div>   
+		<div class="goodsItem">   
+			<ul class="goditem">   
+				<li class="godpic"><img src="images/goods5.jpg"></li>    
+				<li class="godprice">￥109.00</li>  
+				<li class="godinfo">百雀羚臻美套盒</li> 
+				<li class="godadd"><a href="javascript:;">加入购物车</a></li>  
+			</ul>  
+		</div>  
+		<div class="goodsItem">   
+			<ul class="goditem">    
+				<li class="godpic"><img src="images/goods6.jpg"></li> 
+				<li class="godprice">￥32.00</li>   
+				<li class="godinfo">相宜本草保湿乳</li>
+				<li class="godadd"><a href="javascript:;">加入购物车</a></li>   
+			</ul>  
+		</div>  
+	</div>    
+	<div id="godcar"> 
+		<div class="dnum">0</div>  
+		<div class="dcar"> 
+			<img src="images/car.png"> 
+		</div>
+	</div> 
+
+
+<div class="car_footer">
+		<div class="cart_price">
+			<p class="all_price">合计：<span id="s_goods_amount">￥198</span></p>
+			<p>（不含运费）</p>
+		</div>
+		<div class="cart_js" onclick="settlement();">
+			去结算<span id="s_goods_num">（0）</span>
+		</div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+//获取到商品的图片，然后将获取到的图片复制一份；
+var img = $(this).parent().find(".godpic").find("img");
+var cimg = img.clone(); 
+//得到商品图片的top和left值，购物车的top和left值，这样才可以通过animate函数实现移动
+var imgtop = img.offset().top;
+var imgleft = img.offset().left;
+var cartop = $("#godcar").offset().top;
+var carleft = $("#godcar").offset().left; 
+
+
+//编写animate函数，实现具体的效果
+cimg.appendTo($("body")).css({
+"position": "absolute",//
+"opacity": "0.7",  
+"top": imgtop,  
+"left": imgleft 
+}).animate({  
+"top": cartop,  
+"left": carleft,  
+"width": "40px",  
+"height": "40px",  
+"opacity": "0.3"}, 1000,
+ function () {  cimg.remove();
+ 	$(".dnum").text(i);
+ }); 
+
+</script>
+<!-- 通过h5的localStorage实现  刷新页面时，不让购物车的数量发生变化 -->
+<script type="text/javascript">
+	var i = 0;
+	$(function(){
+		var inum = 0;
+		if(localStorage.getItem("inum")!==null){
+			inum = localStorage.getItem("inum");}
+		$(".dnum").text(inum);
+		$(".godadd").click(function(){
+		   if (!$(this).find("a").hasClass("bg")) {
+		     i++;
+		    $(this).find("a").addClass("bg");
+		      var img = $(this).parent().find(".godpic").find("img");
+		      var cimg = img.clone();      
+		      var imgtop = img.offset().top;    
+		      var imgleft = img.offset().left;      
+		      var cartop = $("#godcar").offset().top;    
+		      var carleft = $("#godcar").offset().left;      
+		      cimg.appendTo($("body")).css({
+		      	"position": "absolute", 
+		      	"opacity": "0.7",     
+		      	"top": imgtop,     
+		      	"left": imgleft
+		      }).animate({
+		      	"top": cartop,     
+		      	"left": carleft,     
+		      	"width": "40px",     
+		      	"height": "40px",     
+		      	"opacity": "0.3"   }, 1000, 
+		      	function () {
+		      		cimg.remove();     
+		      		$(".dnum").text(i);
+		      		localStorage.setItem("inum", i);    
+		      	});   
+		  }    
+		}); 
+	}); 
+
+</script>
+
+</body>
+</html>

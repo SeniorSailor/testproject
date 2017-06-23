@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="1元云购,1元购手机,1元购电脑,1元购笔记本电脑,1元购物,云购" />
+<meta name="description" content="1元云购是一种全新的购物方式，是时尚、潮流的风向标，能满足个性、年轻消费者的购物需求。" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.ico" />
+<title>购物车_我的拉手</title>
+<link rel="stylesheet" type="text/css" href="group_css/base.css">
+<link rel="stylesheet" type="text/css" href="group_css/cart.css">
+<link rel="stylesheet" href="group_css/edslider.css">
+<link rel="stylesheet" href="group_css/styles.css">
+<link rel="stylesheet" href="group_css/animate-custom.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/super_slider.js" type="text/javascript"></script>
+<script src="js/Marquee.js"></script>
+<script>
+$(function(){
+	$("#header #dis1").focusin(function(){
+		$("#header #dis1").attr("value","");
+		$("#header p").css("display","none");
+		});
+	$("#header #dis1").focusout(function(){
+		$("#header #dis1").attr("value","输入 “汽车” 试试");
+		$("#header p").css("display","block");
+		});
+		
+		$("#backtop").click(function(){
+		  $("html,body").animate({scrollTop:0}, 500);
+		
+		}); 
+		
+	$('#marquee5').kxbdSuperMarquee({
+		isEqual:false,
+		distance:90,
+		time:2,
+		direction:'down'
+	});
+		
+		
+		
+		
+	});
+		$(window).scroll(function(){
+    var h=$(this).scrollTop();//获得滚动条距top的高度
+    //alert(h); 
+    if(h>100){
+        $("#backtop").show();
+    }else{
+        $("#backtop").hide();
+    }
+});
+	
+
+</script>
+</head>
+<body>
+<!--topbar-->
+<div id="topbar">
+  <div class="topbar">
+    <div class="top_con fl">
+      <p><a href="#">帮助</a></p>
+      <span> <i><img src="img/commitment.png" style="width:145px;height:35px;"></i> </span> </div>
+    <ul class="top_sec fr">
+      <li><a href="login.html">登录</a></li>
+      <li><a href="register.html">注册</a></li>
+      <li id="crazy"><a href="#" >我的拉手<i class="iconfont">&#xe601;</i>
+        <div class="top_sec_sec"> <a href="#" >团购记录</a> <a href="#">看过的商品</a> <a href="#">个人设置</a> </div>
+        </a></li>
+      <li><i class="iconfont">&#xe60b;</i><a href="mobile/index.html">手机拉手</a>
+        <div class="top_sec_th"><span></span>下载手机拉手App<img src="img/index-qrcode.png"></div>
+        <b></b></li>
+      <li><a href="#">充值</a></li>
+      <li><a href="#">收藏</a></li>
+      <li><a href="#">投诉</a></li>
+      <li id="col"><i class="iconfont" style="color:#ff7e00">&#xe607;</i><a href="#">在线客服</a></li>
+    </ul>
+  </div>
+</div>
+
+<!--购物车上部-->
+
+<div id="cart1">
+  <h3 class="cart"><i class="iconfont">&#xe615;</i><i class="iconfont">&#xe689;</i>购物车</h3>
+  <p><a href="detail.html" class="a1">继续团购</a><a href="cart.html" class="a2"> 刷新</a></p>
+</div>
+
+<form id="cart2"><input type="checkbox" name="" checked="checked" id="cb">  全选</form>
+
+<div class="empty">
+	<div class="pic-empty"><img src="images2/cart.png" style="width:280px;height: 240px;"></div>
+	<div class="info">
+		<h3>购物车内暂时没有商品，登录后将显示您之前加入的商品</h3>
+		<a href="login.html"><button class="btn">登录</button></a>
+		<a href="index.html" class="go">去团购<i class="iconfont">&#xe61e;</i></a>
+	</div>
+</div>
+
+<div id="cart3">
+  <table>
+    <tbody>
+      <tr>
+        <th width="70">商品编号</th>
+        <th colspan="2">商品</th>
+        <th width="160">会员价</th>
+        <th width="80">商品数量</th>
+        <th width="100">小计</th>
+        <!--<th width="80">赠送茶币</th>-->
+        <th width="80">操作</th>
+      </tr>
+      <tr class="bg_w">
+        <td width="70"><input type="checkbox" name="" checked="checked" id="selected">
+          NO346 </td>
+        <td colspan="2"><img src="img/hotel.jpg" width="48" height="48"><a href="#" class="hotelName">【省政府】怒醒国际公寓<span>怒醒国际公寓豪华标准房</span></a></td>
+        <td width="160" style="text-align:center;"><p>会员价：￥278.00</p>
+          <span>抢购价：￥258.00</span></td>
+        <td width="80"><a href="javascript:;" class="reduce" id="reduce"></a> <a href="javascript:;" class="sum">
+          <input type="text" value="1" name="" id="sum">
+          </a> <a href="javascript:;" class="add" id="add"></a></td>
+        <td width="100"><div class="money">￥<span id="money">258</span>元</div></td>
+        <td width="80" style="text-align:center;" id="del"><a href="javascript:;">删除</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="total_money">（不含运费）商品金额合计：  ¥<span id="total">768</span>元</div>
+  <div class="go_buy"> <a href="detail.html">查找同类酒店</a> <a href="javascript:;" class="clear_car">清空购物车</a>
+  <input type="button" name="">
+  </div>
+</div>
+
+<!--购物车中部轮播-->
+
+<h1>猜你喜欢</h1>
+<div id="cart5">
+  <div class="box">
+    <div>
+      <dl id="roll">
+        <dd><img src="images/h1.jpg" class="lun"><b></b> <em></em>
+          <p><a href="#">【二七区】罗曼蒂克时尚酒店</a><strong>价值：￥308.00</strong></p>
+          <div class="frog"><a href="#">加入购物车</a></div>
+        </dd>
+        <dd><img src="images/h2.jpg" class="lun"><b></b><em></em>
+          <p><a href="#">【金水区】家家-大城短租公寓酒店</a><strong>价值：￥329.00</strong></p>
+          <div class="frog"><a href="#">加入购物车</a></div>
+        </dd>
+        </dd>
+        <dd><img src="images/h3.jpg" class="lun"><b></b><em></em>
+          <p><a href="#">【CBD】维纳斯丽舍精品酒店</a><strong>价值：￥6319.00</strong></p>
+          <div class="frog"><a href="#">加入购物车</a></div>
+        </dd>
+        <dd><img src="images/h4.jpg" class="lun"><b></b><em></em>
+          <p><a href="#">【桃花峪风景区】优河湾生态园</a><strong>价值：￥300.00</strong></p>
+          <div class="frog"><a href="#">加入购物车</a></div>
+        </dd>
+        <dd><img src="images/h5.jpg" class="lun"><b></b><em></em>
+          <p><a href="#">【乐丁广场】美宜家时尚酒店</a><strong>价值：￥138.00</strong></p>
+          <div class="frog"><a href="#">加入购物车</a></div>
+        </dd>
+        <dd><img src="images/h6.jpg" class="lun"><b></b><em></em>
+          <p><a href="#">【经三路沿线】艾时尚精品酒店</a><strong>价值：￥158.00</strong></p>
+          <div class="frog"><a href="#">加入购物车</a></div>
+        </dd>
+        <dd><img src="images/h7.jpg" class="lun"><b></b><em></em>
+          <p><a href="#">【紫荆山花园路】温州百亨商旅酒店</a><strong>价值：￥139.00</strong></p>
+          <div class="frog"><a href="#">加入购物车</a></div>
+        </dd>
+        <dd><img src="images/h8.jpg" class="lun"><b></b><em></em>
+          <p><a href="#">【二七区】天鹅恋情侣主题酒店</a><strong>价值：￥298.00</strong></p>
+          <div class="frog"><a href="#">加入购物车</a></div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+
+<!--购物车下部-->
+<footer>
+  <div class="footer_up"> <a href="index.html">首页</a><i></i> <a href="#">关于拉手</a><i></i> <a href="#">隐私声明</a><i></i> <a href="#">合作专区</a><i></i> <a href="#">友情链接</a><i></i> <a href="#">加入拉手</a><i></i> <a href="contect.html">联系我们</a><i></i> </div>
+  <p>©　2017　北京拉手网络技术有限公司　LaShou.com　京ICP证100571号　京ICP备11004895号　京公网安备110105001181号</p>
+  <h5></h5>
+</footer>
+
+<!--固定侧栏-->
+<div id="fixed">
+  <div class="fixed_1"></div>
+  <div class="fixed_2"><i class="iconfont">&#xe689;</i><a href="#"><br>
+    购<br>
+    物<br>
+    车<em id="buy">0</em></a></div>
+  <div class="fixed_3"><a href="#"><i class="iconfont">&#xe639;</i></a>
+    <p><a href="#">团购记录</a></p>
+  </div>
+  <div class="fixed_4"><a href="#"><i class="iconfont">&#xe60f;</i></a><a href="#">
+    <p class="pic"><img src="img/app-ad.png"><i><img src="img/index-qrcode.png"></i></p>
+    </a></div>
+  <div class="fixed_5"><a href="#"><i class="iconfont">&#xe64f;</i></a>
+    <p class="pic2"><a href="#"><img src="images/sina_weibo.png">关注官方微博</a></p>
+  </div>
+  <div class="fixed_6"><a href="#"><i class="iconfont">&#xe606;</i></a>
+    <p><a href="#">意见反馈</a></p>
+  </div>
+  <div class="fixed_7"><a href="#"><i class="iconfont">&#xe607;</i></a>
+    <p><a href="#">在线客服</a></p>
+  </div>
+  <div class="fixed_8" id="backtop"><a href="#"><i class="iconfont">&#xe682;</i></a>
+    <p><a href="#">返回顶部</a></p>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+  $(".clear_car").click(function(){
+    $("#cart1 h3").css("color","#666");
+    $("#cart2").hide();
+    $("#cart3").hide();
+    $(".empty").css("display","block");
+  });
+  $(".hotelName").hover(function(){
+    $(this).css("color","#ff7e00");
+    $(this).find("span").css("color","#666");
+  },function(){
+    $(this).css("color","#333");
+    $(this).find("span").css("color","#666");
+  });
+ var os=document.getElementById("selected");
+      document.getElementById("cb").onclick=function(){
+        os.checked=this.checked;
+        if(!os.checked){
+           o_total.innerHTML=0;
+           o_buy.innerHTML=0;
+        }else{
+              o_total.innerHTML=o_sum.value*258;
+              o_buy.innerHTML=o_sum.value;
+        }
+      };
+</script>
+<script type="text/javascript">
+	var o_sum=document.getElementById("sum");
+	var o_money=document.getElementById("money");
+	var o_total=document.getElementById("total");
+	var o_sel=document.getElementById("selected");
+	var o_del=document.getElementById("del");
+	var o_buy=document.getElementById("buy");
+	o_del.onclick=function(){
+		this.parentNode.remove(this.parentNode);
+		o_total.innerHTML=0;
+	};
+	o_total.innerHTML=o_sum.value*258;
+	o_sel.onclick=function(){
+		if (o_sel.checked){
+			money();
+		}else o_total.innerHTML=0;
+	}
+	money();
+	function money(){
+		o_money.innerHTML=o_sum.value*258;
+		
+		if(o_sel.checked){
+			o_total.innerHTML=o_sum.value*258;
+      o_buy.innerHTML=o_sum.value;
+		}else{o_buy.innerHTML=0;}
+	}
+	document.getElementById("reduce").onclick=function(){
+		if (o_sum.value=="1") {	
+		}else {o_sum.value--;
+			money();
+		}
+	};
+	document.getElementById("add").onclick=function(){
+		o_sum.value++;
+		money();
+	};
+</script>
+</html>

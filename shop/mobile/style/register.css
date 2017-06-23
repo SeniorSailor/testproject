@@ -1,0 +1,24 @@
+/*CSS Document*/
+body{background:#e2e2e2;}
+header{width:100%;max-width:15rem;margin:0 auto;height:1.76rem;font-size:0.6rem;font-family:'微软雅黑';
+color:#fff;}
+header .header{width:100%;height:1.76rem;position:relative;background: #ff621d;}
+header .header i{width:10%;height:1.26rem;float:left;top:0.5rem;position:absolute;left:0.4rem;}
+header .header .login-user{width:20%;height:1.26rem;margin: 0 auto;line-height: 1.76rem;font-size:0.6rem;}
+header .header i a{font-size:0.6rem;color:#fff;}
+header .header span{font-family:'微软雅黑';color:#fff;position: absolute;left:40%;}
+
+
+
+/*表单*/
+
+.content{background:#fff;width:100%;max-width:15rem;height:22rem;position: relative;margin:0 auto;}
+.content .get{position: absolute;top:0.2rem;right:1%;width:3.5rem;height:1rem;cursor:pointer;color:#fff;
+background:#20c9b5;font-size:0.6rem;border:none;border-radius:0.2rem;}
+.tips{color:#cecece;margin-left:10%;font-size:0.48rem;margin-top:0.5rem;}
+form .sub input{margin-left:2rem; cursor:pointer;color:#fff;background:#ff621d;width:80%;border-radius:0.1rem;
+font-weight:bold;font-size:0.6rem;margin-top:1.2rem;}
+form{font-family:'微软雅黑';position: absolute;top: 8%;width:85%;max-width:15rem;}
+form ul{border:1px solid #cecece;border-radius:0.3rem;width:100%;height:6.62rem;margin-left:9%;box-sizing:border-box;overflow:hidden;}
+form li{border-bottom: 1px solid #cecece; width:100%;height:1.63rem;}
+input{width:100%;height:1.2rem;margin-left:5%;margin-top:0.15rem;font-size:0.48rem;}

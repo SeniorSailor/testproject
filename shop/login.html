@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>登录 - 郑州拉手网</title>
+<meta name="keywords" content=""/>
+<meta name="description" content="拉手网郑州站-超人气团购网站。拉手网为您提供郑州生活团购,商品团购,酒店团购,化妆品团购等产品,为您精选郑州的餐厅、酒吧、KTV、SPA、美发店、摄影、瑜伽馆等特色商家，让您体验超人气团购网站给您带来的超低折扣!"/>
+<meta name="alexaVerifyID" content="8itXFZsHbEIm-LUNHfD2q3xw-Ek" />
+<meta name="application-name" content="拉手网－超人气团购网站" />
+<meta name="msapplication-window" content="width=device-width;height=device-height" />
+<meta name="msapplication-tooltip" content="拉手网,超人气团购网站。" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="style/base.css">
+<link rel="stylesheet" type="text/css" href="style/register.css">
+<body>
+<!-- 头部 -->
+<header>
+	<div class="logo">
+	<a href="www.zhengzhoulashou.com">
+		<img src="img/logo.png">
+	</a>
+	</div>
+	<div class="commitment">
+		<img src="img/commitment.png">
+	</div>
+</header>
+<!-- 主体 -->
+<main>
+	<div class="login-left">
+		<a href="#">
+			<img src="img/login02.png" style="width:415px;height:350px;">
+		</a>
+	</div>
+	<div class="login-right">
+		<div id="tab">
+			<ul id="menu">
+				<li class="current">普通方式登录</li>
+				<li>手机动态码登录</li>
+			</ul>
+			<div id="content">
+					<div class="show">
+						<b class="user">
+							<i class="iconfont">&#xe63c;</i>
+							<input type="text" name="" placeholder="用户名/邮箱/支付宝" onfocus="this.placeholder=''" onblur="this.placeholder='用户名/邮箱/支付宝'">
+						</b>
+						<b class="pwd">
+							<i class="iconfont">&#xe692;</i>
+						<input type="password" name="" placeholder="请输入账户密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入账户密码'">
+						</b>
+						<button class="login-btn">登录</button>
+						<span class="fl"><a href="#">忘记密码</a></span>
+						<span class="fr"><a href="register.html">免费注册</a></span>
+						
+						
+					</div>
+					<div>
+						<b class="phone-user">
+							<i class="iconfont">&#xe60b;</i>
+							<input type="text" name="" placeholder="请输入注册使用的手机号" onfocus="this.placeholder=''" onblur="this.placeholder='请输入注册使用的手机号'">
+						</b>
+						<a href="#" class="get">获取动态码</a>
+						<b class="phone-pwd">
+							<i class="iconfont">&#xe605;</i>
+						<input type="password" name="" placeholder="请输入手机动态码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机动态码'">
+						</b>
+						<button class="login-btn">登录</button>
+						<span class="fl"><a href="#">忘记密码</a></span>
+						<span class="fr"><a href="register.html">免费注册</a></span>
+					</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var os=document.getElementsByTagName("li");
+			var ds=document.getElementById("content").getElementsByTagName("div");
+			var cur_index=0;//保存选中菜单的位置
+			for(var i=0;i<os.length;i++){
+				os[i]._index=i;
+				os[i].onclick=function(){
+					//清除当前的菜单的样式
+					os[cur_index].className="";
+					ds[cur_index].className="";
+
+					//更改选中的菜单的样式
+					this.className="current";				
+					ds[this._index].className="show";
+					//修改选中的位置
+					cur_index=this._index;
+
+				};
+			}
+		</script>
+		<div class="login-more">
+			<h3>用合作网站登录</h3>
+			<div>
+				<a href="#">
+					<i class="iconfont">&#xe7df;</i>
+					百度
+				</a>
+				<a href="#">
+					<i class="iconfont">&#xe676;</i>
+					微信
+				</a>
+				<a href="#">
+					<i class="iconfont">&#xe609;</i>
+					新浪
+				</a>
+				<a href="#">
+					<i class="iconfont">&#xe608;</i>
+					腾讯
+				</a>
+				<a href="#">
+					<i class="iconfont">&#xe620;</i>
+					支付宝
+				</a>
+			</div>
+		</div>
+	</div>
+</main>
+<!-- 底部 -->
+﻿<footer id="footer">
+<div class="login-footerlink">
+<a href="#" rel="nofollow">关于拉手</a><span></span>
+<a href="#" rel="nofollow">常见问题</a><span></span>
+<a href="#" rel="nofollow">服务保障</a><span></span>
+<a href="#" rel="nofollow">团购合作</a><span></span>
+<a href="#" rel="nofollow">开放API</a><span></span>
+<a href="#" target="_blank">拉手网联盟</a><span></span>
+<a href="#" rel="nofollow">加入我们</a><span></span>
+<a href="mobile/index.html" rel="nofollow">移动拉手</a>
+</div>
+<p class="copyright">电话:4000-517-317&nbsp;&nbsp;地址:北京市朝阳区望京东路一号摩托罗拉大厦8层</p>
+<p class="copyright">©&#x3000;2015&#x3000;北京拉手网络技术有限公司&#x3000;LaShou.com&#x3000;京ICP证100571号&#x3000;京ICP备11004895号&#x3000;京公网安备110105001181号</p>
+</footer>
+
+</body>
+</html>

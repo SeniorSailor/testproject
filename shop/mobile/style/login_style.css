@@ -1,0 +1,52 @@
+/*CSS Document*/
+*{margin:0;padding:0;}
+body{background:#e2e2e2;}
+header{width:100%;max-width:15rem;margin:0 auto;height:1.76rem;font-size:0.6rem;font-family:'微软雅黑';
+color:#fff;}
+header .header{width:100%;height:1.76rem;position:relative;background: #ff621d;}
+header .header i{width:10%;height:1.26rem;float:left;top:0.5rem;position:absolute;left:0.4rem;}
+header .header .title{width:80%;height:1.26rem;top:0.5rem;position:absolute;left:8%;text-align:center;}
+header .header .login-user{width:10%;height:1.26rem;top:0.5rem;float:right;position:absolute;right:0.2rem;}
+header .header i a{font-size:0.6rem;color:#fff;}
+header .header span a{font-size:0.6rem;font-family:'微软雅黑';color:#fff;}
+.login-content{width:100%;max-width:15rem;margin:0 auto;height:22rem; position:relative;background:#fff;}
+.login-content .login-change{width:100%;max-width:15rem;margin:0 auto;height:2rem;}
+
+
+/*登录选项卡*/
+#tab{width:15rem;height:3rem;}
+#tab ul{list-style: none;width:100%;height:2rem;border-bottom:1px solid #c9c9c9;}
+#tab #menu li{float: left;width:7.5rem;height:2rem;line-height:2rem;text-align:center;
+border-right: none;box-sizing: border-box;}
+#tab #menu li:hover{cursor: pointer;}
+#tab #menu .current{background: #fff;border-bottom:2px solid #ff3f06;color:#ff3f06;}
+#tab #content{clear: both;width:100%;height:10rem;}
+#tab #content div{text-align:center;width:100%;height:3.4rem;line-height:3.4rem;display:none;border-top:none;}
+#tab #content .code{float: right; margin-right:2rem;display:block;width:3rem;height:1rem;
+border-radius:0.2rem;border:1px solid #eee;background:#ff7e00;color:#fff;font-size:0.48rem;cursor:pointer;}
+#tab #content .show{display: block;height:3.4rem}
+#login-form{width:100%;height:10rem;}
+#content .show .pwd-btn{float: right; margin-right:2rem;display:block;width:3rem;height:1rem;
+border-radius:0.2rem;border:1px solid #eee;background:#ff5500;cursor:pointer;}
+#content .show a{font-size:0.48rem;color:#fff;font-weight:bold;}
+.codebox-input{width:11.2rem;height:1.67rem;border:1px solid gray;border-radius:0.3rem;font-size:0.48rem;padding-left:0.8rem;}
+.pwd-input{width:11.2rem;height:1.67rem;border:1px solid gray;border-radius:0.3rem;font-size:0.48rem;padding-left:0.8rem;}
+.codebox2-input{width:11.2rem;height:1.67rem;border:1px solid gray;border-radius:0.3rem;font-size:0.48rem;padding-left:0.8rem;
+}
+.pwd2-input{width:11.2rem;height:1.67rem;border:1px solid gray;border-radius:0.3rem;font-size:0.48rem;padding-left:0.8rem;}
+#user{color:#a9a9a9;font-size:0.48rem;position:absolute;top:2.05rem;left:1.8rem;}
+#pwd{color:#a9a9a9;font-size:0.48rem;position:absolute;top:5.42rem;left:1.7rem;}
+#phone{color:#a9a9a9;font-size:0.48rem;position:absolute;top:2.05rem;left:1.8rem;}
+#code{color:#a9a9a9;font-size:0.48rem;position:absolute;top:6.43rem;left:1.7rem;}
+
+/*登录按钮*/
+.btn-login{width:11.2rem;height:1.4rem;background:#ff621d;position:absolute;top:11rem;left:1.8rem;border-radius:0.3rem;
+color:#fff;font-size:0.56rem;font-weight:bold;border:none;overflow:hidden;cursor:pointer;}
+
+/*合作登录网站*/
+.login-content .login-other{width:100%;max-width:15rem;margin:0 auto;height:5rem;position:relative;top:10.4rem;}
+.login-other h2{color:#999899;font-size:0.56rem;font-weight:normal;position:absolute;top:1.5rem;left:4.8rem;}
+.login-other .pic-qq{position:absolute;top:3rem;left:3rem;}
+.login-other .pic-weibo{position:absolute;top:3rem;right:3rem;}
+/*.login-other img.qq{position:absolute;top:3rem;left:4rem;}
+.login-other img.wb{position:absolute;top:3rem;right:4rem;}*/
