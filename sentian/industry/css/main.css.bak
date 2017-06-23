@@ -1,0 +1,66 @@
+/*首页头部*/
+header{width:100%;height:720px;background:url('../images/banner.jpg') no-repeat center center;}
+header .top{width:100%;height:97px;background:rgba(0,0,0,.8);}
+header .top .prev{float:left;width:30px;height:53px;overflow:hidden;margin-top:16%;margin-left:10%;}
+header .top .prev:hover,header .top .next:hover{background:#b6b6b6;}
+header .top .next{margin-top:16%;margin-left:88%;width:30px;height:53px;transform:rotate(180deg);overflow:hidden;}
+header .top .slide i{float:left;width:40px;height:40px;background:url('../images/slidehd.jpg');display:block;margin-top:105px;}
+header .top .slide em{width:40px;height:40px;background:url('../images/slidehd.jpg');display:inline-block;
+background-position:-43px 0;position:absolute;top:105px;right:0;}
+header .top .slide{width:1080px;height:210px;margin:112px auto;position:relative;}
+header .top .slide ul{width:950px;height:160px;position:absolute;bottom:-1px;left:64px;overflow:hidden;}
+header .top .slide ul li{width:188px;float:left;position:relative;}
+header .top .slide ul li:hover{bottom:-162px;}
+header .top .slide ul li img,header .top .slide ul p img{margin-left:50px;}
+header .top .slide ul p img{margin-top:10px;}
+header .top .slide ul li span,header .top .slide ul p span{color:#fff;display:block;text-align:center;margin-top:25px;font-size:16px;}
+header .top .slide ul p span{color:#666;margin-top:15px;font-size:18px;}
+header .top .slide ul p{width:188px;height:160px;background:#fff;position:absolute;top:-160px;left:0;}
+header .top .slide ul p span.sty{font-weight:normal;font-size:12px;color:#666;margin-left:105px;margin-top:20px;}
+header .top .top_b{width:1098px;margin:0 auto;position:relative;}
+header .top .top_b ul{height:32px;position:absolute;top:30px;right:33px;}
+header .top .top_b ul li{width:80px;height:32px;float:left;line-height:37px;text-align:center;margin-right:10px;color:#fff;}
+header .top .top_b ul li a{color:#fff;font-size:15px;}
+header .top .top_b ul li a:hover{color:#ccb144;}
+header .top .top_b .search{position:absolute;top:42px;;right:0;}
+/*首页 main*/
+.main{position:relative;width:1096px;height:786px;margin:0 auto;padding-top:30px;}
+.main .main_l{width:215px;border:1px solid #666;float:left;}
+.main .main_l h2{height:48px;background:#d6c169;font-size:24px;color:#fff;font-weight:normal;padding:5px;}
+.main .main_l h2 span{display:block;font-size:14px;letter-spacing:2px;color:#e9deab;margin-top:3px;}
+.main .main_l ul{height:174px;margin:10px;}
+.main .main_l ul li{width:190px;height:34px;border-bottom:1px solid #666;line-height:34px;}
+.main .main_l ul li a{display:block;width:100%;height:100%;background:url('../images/arrow.png') no-repeat 8px center;text-indent:30px;color:#000;}
+.main .main_l ul li:hover a{background:#d6c169 url('../images/arrow1.png' )no-repeat 8px center;color:#fff;}
+.main .main_r .main_rt{width:859px;height:44px;border:1px solid #ececec;float:right;}
+.main .main_r .main_rt i{display:block;float:left;width:44px;height:44px;background:url('../images/locico.jpg') center center no-repeat;border-right:1px solid #ececec}
+.main .main_r .main_rt p,.main .main_r .main_rt p a{line-height:44px;text-indent:12px;color:#8f8f8f;}
+.main .main_r .main_rt p a:hover{text-decoration:underline;color:#d6c169;}
+.main .main_r .industry_text{width:859px;height:196px;;float:right;margin-top:36px;}
+.main .main_r .industry_text p{font-size:12px;color:#8f8f8f;width:600px;float:left;}
+.main .main_r .industry_text img{border:1px solid #ececec;}
+.main .main_r .industry_img{position:relative;top:0;left:0;overflow:hidden;width:666px;;height:435px;background:gray;float:right;margin-top:20px;margin-right:196px;}
+.main .main_r .industry_img ul li{position:absolute;top:0;width:286px;height:435px;list-style:none;}
+.main .main_r .industry_img ul li:nth-child(1){left:0;}
+.main .main_r .industry_img ul li:nth-child(2){left:286px;}
+.main .main_r .industry_img ul li:nth-child(3){left:386px;}
+.main .main_r .industry_img ul li:nth-child(4){left:486px;}
+.main .main_r .industry_img ul li:nth-child(5){left:586px;}
+.main .main_r .industry_img ul li p{position:absolute;top:0;color:#fff;width:10px;
+height:100%;background:rgba(0,0,0,.5);padding:200px 30px;}
+/*首页底部*/ 
+footer{width:100%;height:275px;background:#000;border:1px solid #000;}
+footer .bbox {width:990px;height:210px;margin:0 auto;}
+footer .bbox .map{width:756px;height:100%;margin-top:26px;float:left;}
+footer .bbox .map dl{color:#fff;float:left;}
+footer .bbox .map dl dt{font-size:14px;height:30px;width:108px;}
+footer .bbox .map dl dd{font-size:12px;margin-top:10px;color:#c8c8c8;}
+footer .bbox .weixin{width:224px;height:209px;px;border-left:1px solid #666;float:right;margin-top:26px;float:left;}
+footer .bbox .weixin ul li{float:left;color:#fff;}
+footer .bbox .weixin ul li img{margin-left:20px;display:inline-block;}
+footer .bbox .weixin ul li h2{font-size:12px;font-weight:normal;color:#c8c8c8;margin-left:28px;}
+footer .foot{width:100%;border-top:1px solid #666;margin-top:24px;}
+footer .foot .copyright{width:990px;margin:0 auto;}
+footer .foot .copyright p,footer .foot .copyright span a{color:#c8c8c8;float:left;line-height:40px;font-size:12px;}
+footer .foot .copyright span a{float:right;margin-right:10px;}
+footer .foot .copyright span a:hover{text-decoration:underline;color:#ccb144;}
