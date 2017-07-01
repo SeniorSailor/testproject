@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏详情</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            <div class="games_header">
+                <div class="games_header_left">
+                    <a href="index.html">
+                        <img src="img/logo.png"/>
+                    </a>
+                </div>
+                <div class="games_header_right">
+                    <a href="games.html">首页</a>
+                </div>
+            </div>
+            <div class="gameDetail_banner">
+                <div class="gameDetail_content">
+                    <div class="game_title">
+                        <div class="game_left">
+                            <div class="gameDetail_logo">
+                                <img src="img/gameDetailImg2.png"/>
+                            </div>
+                            <div class="gameDetail_text">
+                                <h4>暴力战车</h4>
+                                <div>
+                                    <p>类型：<span>射击类</span></p>
+                                    <img src="img/gameDetailImg3.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game_right">
+                            <button>
+                                <span>游戏下载</span>
+                                <img src="img/gameDetailImg4.png"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gameDetail_words">
+                        <h4>游戏介绍</h4>
+                        <p>《暴力战车》是一款以现代军事为题材的射击类手机网络游戏。</p>
+                        <p>在游戏中，玩家可以通过击退敌人获取金币，用金币购买武器和升级技能，以此提升自己的战斗力，消除敌人带来的威胁。</p>
+                        <p>通过游戏，提升了玩家的整体部署能力和前瞻性。</p>
+                    </div>
+                    <div class="gameDetail_writer">
+                        <img src="img/gameDetailImg5.jpg"/>
+                        <div>
+                            <h4>相关动态</h4>
+                            <p><a href="#">暴力战车-相关攻略</a></p>
+                            <p><a href="#">暴力战车-相关攻略</a></p>
+                            <h4>相关游戏信息</h4>
+                            <p>游戏名称： 暴力战车</p>
+                            <p>出品单位： 深圳市三角力量网络科技有限公司</p>
+                            <p>备案文号： 文网游备字〔2016〕Ｍ-CSG 0563 号</p>
+                            <p>许可证号： 浙网文〔2015〕0494-213号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cover_box">
+            <div class="cover"></div>
+            <div class="gameDetail_hide">
+                <div class="hide_header">
+                    <div class="hide_box">
+                        <p class="hide_header_left">
+                            <a href="#">一键安装到手机</a>
+                        </p>
+                        <p class="hide_header_right">
+                            关闭
+                        </p>
+                    </div>
+                </div>
+                <div class="hide_box">
+                    <div class="hide_content">
+                        <div class="hide_content_left">
+                            <p>是否将该文件直接安装到手机？</p>
+                            <p>XCXXXZSB.apk</p>
+                            <p>apk大小：4.6MB</p>
+                            <p class="hide_blue">扫描右边二维码也可直接安装</p>
+                        </div>
+                        <div class="hide_content_right">
+                            <img src="img/gameDetailImg5.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="hide_footer">
+                    <div class="hide_footer_box">
+                        <div class="down">仅下载到电脑</div>
+                        <div class="noDown">取消</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+
+    $(document).ready(function(){
+        /****设置遮罩层的高度*******/
+        function coverHeightSet(){
+            var height = $(".games_header").height()+$(".gameDetail_banner").height()+60;
+            $(".cover").css({"height":height+"px"});
+            console.log(height);
+        }
+        $(".hide_header_right").click(function(){
+            $(".cover").css({"display":"none"});
+            $(".gameDetail_hide").css({"display":"none"});
+        });
+
+        $(".game_right>button").click(function(){
+            $(".cover").css({"display":"block"});
+            $(".gameDetail_hide").css({"display":"block"});
+            coverHeightSet();
+        });
+
+        $(".noDown").click(function(){
+            $(".cover").css({"display":"none"});
+            $(".gameDetail_hide").css({"display":"none"});
+        });
+    });
+</script>
+</body>
+</html>

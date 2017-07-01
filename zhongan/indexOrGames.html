@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择页</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="select_box1">
+        <img src="img/selectImg_1.jpg"/>
+        <div class="select_log">
+            <img src="img/selectImg2.png"/>
+        </div>
+        <div class="select_content_box">
+            <!--<div class="select_left">
+                <a href="index.html">
+                    <img src="img/selectImg3.png"/>
+                </a>
+            </div>
+            <div class="select_right">
+                <a href="games.html">
+                    <img src="img/selectImg4.png"/>
+                </a>
+            </div>-->
+            <div class="select_middle">
+                <a href="games.html">
+                    <img src="img/selectImg4.png"/>
+                </a>
+            </div>
+        </div>
+    </div>
+<script>
+    $(window).load(function(){
+        /***定位图片****/
+        function setImgPosition(){
+            var width1 = $(".select_box1").width(),width2,width3;
+            width2 = $(".select_log").width();
+            width3 = $(".select_content_box").width();
+            $(".select_log").css({"left":(width1-width2)/2+"px"});
+            $(".select_content_box").css({"left":(width1-width3)/2+"px"});
+        }
+
+        setImgPosition();
+    });
+</script>
+</body>
+</html>
